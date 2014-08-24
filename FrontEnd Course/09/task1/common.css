@@ -1,0 +1,42 @@
+* 				{padding: 0; margin: 0;}
+
+body 			{		}
+
+#container		{	width: 400px; }
+
+
+
+p 				{	padding-bottom: 1.5em;	}
+
+form			{		}
+
+form label, 
+form input		{	display: block; 	}
+form label 		{	padding-bottom: 0.25em;	}
+form textarea, 
+form input	
+				{	padding: 5px;
+					 width: 100%; 
+					 box-sizing: border-box; 
+					border: 1px solid #999; 
+				}
+
+form input:focus, 
+form textarea:focus 	{	border-color: #F00;	}
+form fieldset {padding: 1.5em; margin-bottom: 1.5em; border: 1px solid #CCC;}
+form fieldset p:last-child	{	padding-bottom: 0;	}
+form fieldset legend 	{	padding: 0 0.5em;	}
+
+form.compact p 		{	overflow: hidden;	}
+form.compact label, 
+form.compact input,	
+form.cmopact textarea	{	float: left;	}
+form.compact input, 
+form.compact textarea	{	width: 70%;	}
+form.compact label	{	width: 27.5%; margin-right: 2.5%; text-align: right;	}
+form.compact span.helper	{	margin-left: 30%;	}
+
+form .list-checkbox		{		}
+form .list-checkbox li 	{	display: block; width: 50%; float: left; list-style: none outside; overflow: hidden; padding-bottom: 0.5em;	}
+form .list-checkbox li input	{	width: 10%;	margin-top:  0.32em;	}
+form .list-checkbox	li label	{	width: 75%;	text-align: left;	}

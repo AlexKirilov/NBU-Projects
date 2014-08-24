@@ -1,0 +1,5 @@
+
+#header nav 	{	border-top: 4px solid #f4f4f4;	}
+#header nav ul	{	overflow: hidden; padding: 0;	}
+#header nav li	{	display: block; float: left; list-style: none outside;	}
+#header nav a	{	display: block;	padding: 15px 20px; font-size: 1.16em; color: #999999;	}

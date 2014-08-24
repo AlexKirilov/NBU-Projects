@@ -1,0 +1,12 @@
+c:\users\axel\documents\visual studio 2012\Projects\Bkove i kravi\Bkove i kravi\bin\Debug\Bkove i kravi.exe.config
+c:\users\axel\documents\visual studio 2012\Projects\Bkove i kravi\Bkove i kravi\bin\Debug\Bkove i kravi.exe
+c:\users\axel\documents\visual studio 2012\Projects\Bkove i kravi\Bkove i kravi\bin\Debug\Bkove i kravi.pdb
+c:\users\axel\documents\visual studio 2012\Projects\Bkove i kravi\Bkove i kravi\obj\Debug\Bkove i kravi.csprojResolveAssemblyReference.cache
+c:\users\axel\documents\visual studio 2012\Projects\Bkove i kravi\Bkove i kravi\obj\Debug\Bkove i kravi.exe
+c:\users\axel\documents\visual studio 2012\Projects\Bkove i kravi\Bkove i kravi\obj\Debug\Bkove i kravi.pdb
+C:\NBU\4 sem\C#\C# Examp\Projects\Bkove i kravi\Bkove i kravi\bin\Debug\Bkove i kravi.exe.config
+C:\NBU\4 sem\C#\C# Examp\Projects\Bkove i kravi\Bkove i kravi\obj\Debug\Bkove i kravi.exe
+C:\NBU\4 sem\C#\C# Examp\Projects\Bkove i kravi\Bkove i kravi\obj\Debug\Bkove i kravi.pdb
+C:\NBU\4 sem\C#\C# Examp\Projects\Bkove i kravi\Bkove i kravi\bin\Debug\Bkove i kravi.exe
+C:\NBU\4 sem\C#\C# Examp\Projects\Bkove i kravi\Bkove i kravi\bin\Debug\Bkove i kravi.pdb
+C:\NBU\4 sem\C#\C# Examp\Projects\Bkove i kravi\Bkove i kravi\obj\Debug\Bkove i kravi.csprojResolveAssemblyReference.cache

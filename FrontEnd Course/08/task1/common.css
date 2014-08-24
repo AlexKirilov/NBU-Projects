@@ -1,0 +1,21 @@
+* 			{	padding: 0px; margin: 0;	}
+
+body 		{	background: #CCC;	}
+
+.clearing	{	clear: both;	}
+
+
+#header		{	height: 50px; 	margin-bottom: 10px;	}
+#footer		{	height: 50px;	margin-top: 10px;		}
+#main 		{	overflow: hidden; padding-top: 20px; width: 100%;	}
+
+h1			{	text-align: center; color: red;	}
+
+.content	{	width: 60%; }
+.sidebar 	{	width: 40%; }
+
+.content .inner 		{	width: 100%;	}
+.content .inner img 	{	display: block; float: left; width: 24%; padding: 3px;	}
+
+.sidebar .inner 		{	width: 	100%;	}
+.sidebar .inner img 	{	display: block; float: right; width: 19%; padding: 3px;	}

@@ -1,0 +1,24 @@
+*			{	padding: 0px; margin: 0;	}
+
+body 		{	padding-top: 50px;	}
+
+.clearing	{	clear: both; }
+
+#container	{	width: 60%; border: 1px solid black; margin: 0 auto;	}
+
+#header,
+#footer 	{	background: #CCC; border: 10px solid white;	padding: 10px;}
+#header		{	margin-bottom: -10px;	}
+#section	{	width: 100%; margin-left: 0px;	}
+
+#section .content,
+#section .sidebar 	{	color:  #000; padding: 0px; float: left; 	}
+#section .content 	{	width: 70%;	background: #CCC;	}
+#section .content .inner 	{	border: 10px solid #FFF; padding: 10px;	}
+#section .sidebar	{	width: 30%;	background: #CCC;	}
+#section .sidebar .inner 	{	border: 10px solid #FFF; padding: 10px;	}
+
+#section .content,
+#section .siderbar	{	float: right;	}
+
+#footer	{	 padding: 10px;	margin-top: -10px;	}

@@ -1,0 +1,23 @@
+* 						{ 	padding: 0; margin: 0; }
+
+body 					{ 	padding: 20px; background: white;  }
+
+nav a 					{ 	display: block; color: #000; text-decoration: none; }
+nav li 					{	list-style: none outside; display: block; position: relative;	}
+
+nav 					{ 		}
+nav ul:first-child		{ 	padding: 0; background: black; border: 10px solid black;	} 
+nav ul li 				{	display: block;  width: 16%; ; float: left; }
+nav ul li:last-child 	{ 	margin-right: 0;  }
+
+nav ul li a 			{ 	display: block; padding: 5px 0px; text-align: center; color: #000; border: 1px solid darkgray; background: #FFA500;  }
+nav ul li a:hover 		{ 	background: darkorange;  color: #FFF; box-shadow: 5px 8px 10px 0px #000;	}
+
+nav > ul > li 			{	margin: 0 0.76% 0 0	}
+nav > ul > li:hover		{	margin-top: -5px;  }
+
+nav ul li ul 			{	display: none; width: 500%;   top: 100%;	}
+nav li:hover > ul		{	display: block; padding-top: 15px;	margin: 0 0 0 0;	}
+
+nav ul li ul li a:hover			{	background: #FF6600; color: white;	}
+nav ul li ul li ul li a:hover	{	background: #FF7F00; color: white;	left: 100%;}

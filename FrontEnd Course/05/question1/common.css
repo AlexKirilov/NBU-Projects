@@ -1,0 +1,22 @@
+* { margin: 0;  padding: 0; }
+
+body { padding: 40px; }
+
+table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+
+table, table td, table th { border: 1px solid #000;  }
+
+table td, table, th { padding: 10px;  }
+
+table .first { background: #F00; }
+
+table .id { width: 10%; }
+table .name { width: 50%; }
+table .actions { width: 100px; }
+
+table tbody tr:last-child td:first-child { background: #FFF; }
+
+table tr:nth-child(odd) td { background: #EEE;  }
+
+/*table tr td:first-child { background: #F00; }*/
+/*table tbody tr:last-child td:first-child { background: #FFF; }*/

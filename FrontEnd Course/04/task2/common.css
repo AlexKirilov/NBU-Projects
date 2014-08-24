@@ -1,0 +1,28 @@
+﻿*{
+	padding: 10px;
+	margin: 5px;
+}
+
+body {
+	background: #CCC;
+	font: 18px/1.5 Arial , Verdana;
+	padding: 15px;
+}
+
+h1 {
+border: 1px solid #CCC;
+background: #FEC;
+padding-left: 120px;
+font: 24px/1.5 TimesNewRoman;
+font-style: Italic;
+color: red;
+}
+h1:hover {
+color: green;
+}
+
+p {
+	padding-top: 15px;
+	padding-left: 60px;
+	color: blue;
+}

@@ -1,0 +1,36 @@
+﻿*{
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background: #EEE;
+	font: 18px/1.5 Arial, Verdana;
+	padding: 60 px
+}
+
+h1, h2, h3, h4, h5, h6{
+	padding-bottom: 10px;
+	padding-top: 40px;
+}
+
+p, ol, ul, dl {
+	padding-bottom: 20px;
+}
+
+ul, ol {
+	padding-top: 0.5em;
+	padding-left: 40px;
+}
+
+ul li { list-style: circle; }
+ul li  ul li { list-style: square; }
+ul li  ul li ul li {list-style-type: disk;}
+
+ol li,
+ul li ol li {list-style-type: decimal;} 
+ol li ol li,
+ul li ol li ol li { list-style-type: upper-roman; }
+
+ol li ol li ol li,
+ul li ol li ol li ol li{ list-style-type: upper-alpha; }

@@ -1,0 +1,30 @@
+* { padding: 0; margin: 0; } 
+
+body { }
+
+#container { width: 900px; margin: 0 auto; background: #F00; }
+
+header { padding: 20px; background: #CCC;   }
+
+section { background: #EEC; overflow: hidden; }
+section .content,
+section .sidebar { color: #FFF; padding: 0; float: left; }
+
+section .content { width: 70%; background: #F00; }
+section .content .inner { border-left: 10px solid #FFF;  }
+section .sidebar { width: 30%; background: #F0F;  }
+section .sidebar .inner { border-right: 10px solid #FFF;  }
+
+section.sidebar-left .content,
+section.sidebar-left .sidebar { float: right; }
+
+footer { padding: 20px; background: #EFE; }
+
+
+
+
+.content .inner,
+.sidebar .inner { padding: 70px 20px; }
+
+
+

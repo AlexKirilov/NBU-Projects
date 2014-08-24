@@ -1,0 +1,22 @@
+﻿			body	{	
+						padding-top: 4%;
+						background-color: gray;			
+					}
+			table	{
+						text-align: middle;
+						font-style: italic;
+						font-family: Verdana, Arial;
+						border-collapse: collapse;
+						width: 800px;
+						height: 300px;
+						background-color: silver;
+
+					}
+			th		{
+						border: solid black;
+						text-transform: bold;
+						background-color:white;
+						color:#000000;
+					}
+					
+			table tr:nth-child(odd) td { background: #EEE; }

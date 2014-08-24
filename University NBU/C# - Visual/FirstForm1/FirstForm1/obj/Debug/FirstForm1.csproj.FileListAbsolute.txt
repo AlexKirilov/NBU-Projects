@@ -1,0 +1,12 @@
+c:\users\axel\documents\visual studio 2012\Projects\FirstForm1\FirstForm1\bin\Debug\FirstForm1.exe.config
+c:\users\axel\documents\visual studio 2012\Projects\FirstForm1\FirstForm1\bin\Debug\FirstForm1.exe
+c:\users\axel\documents\visual studio 2012\Projects\FirstForm1\FirstForm1\bin\Debug\FirstForm1.pdb
+c:\users\axel\documents\visual studio 2012\Projects\FirstForm1\FirstForm1\obj\Debug\FirstForm1.csprojResolveAssemblyReference.cache
+c:\users\axel\documents\visual studio 2012\Projects\FirstForm1\FirstForm1\obj\Debug\FirstForm1.Form1.resources
+c:\users\axel\documents\visual studio 2012\Projects\FirstForm1\FirstForm1\obj\Debug\FirstForm1.Properties.Resources.resources
+c:\users\axel\documents\visual studio 2012\Projects\FirstForm1\FirstForm1\obj\Debug\FirstForm1.csproj.GenerateResource.Cache
+c:\users\axel\documents\visual studio 2012\Projects\FirstForm1\FirstForm1\obj\Debug\FirstForm1.exe
+c:\users\axel\documents\visual studio 2012\Projects\FirstForm1\FirstForm1\obj\Debug\FirstForm1.pdb
+C:\NBU\4 sem\C#\C# Examp\Projects\FirstForm1\FirstForm1\bin\Debug\FirstForm1.exe.config
+C:\NBU\4 sem\C#\C# Examp\Projects\FirstForm1\FirstForm1\obj\Debug\FirstForm1.exe
+C:\NBU\4 sem\C#\C# Examp\Projects\FirstForm1\FirstForm1\obj\Debug\FirstForm1.pdb

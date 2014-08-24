@@ -1,0 +1,28 @@
+*		{	padding: 10px; margin: 0;	}
+
+body 	{	font: 16px/1.5 Verdana, Arial, sans-serif;	}
+
+.cleaner	
+		{	clear: both;	}
+
+#container 
+		{	width: 900px; margin: 0 auto;	}
+#header,
+#footer,
+#main 	{	border: 1px solid #000;		}
+		
+#header
+		{	height: 200px; margin-bottom:  20px; border-top: 0; 	}
+#footer
+		{	height: 200px; margin-top:  20px; border-top: 0; 	}
+#main 	{	overflow: hidden;	}
+
+.content, .sidebar
+		{	float: left; overflow: hidden;	}
+
+.content {	width: 70%;	}
+.sidebar {	width: 30%;	}
+
+/*---Header---*/
+#header	{		}
+#header

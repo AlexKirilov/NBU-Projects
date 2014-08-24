@@ -1,0 +1,10 @@
+* 			{ padding: 0; margin: 0; }
+
+body 		{ background: #c9c9c9; font: 16px/1.5 Verdana, Arial, sans-serif;}
+
+
+.navi ul li 				{ background: orange; display: block; overflow: hidden; float: left;  margin: 50px 5% 0 5%;	}
+.navi ul li:last-child		{ padding-right: 0;}
+.navi ul li a 				{ background: #000; font: 1.6em; text-decoration: none; color: #FFF; ; }
+.navi ul li a:hover 		{ color: #FE4101; text-shadow: 2px solid #CCC;  }
+.navi ul li a:active		{ color: #A42A01; }

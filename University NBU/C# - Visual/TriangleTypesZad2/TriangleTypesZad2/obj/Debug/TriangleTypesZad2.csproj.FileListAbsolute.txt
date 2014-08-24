@@ -1,0 +1,12 @@
+c:\users\axel\documents\visual studio 2012\Projects\TriangleTypesZad2\TriangleTypesZad2\bin\Debug\TriangleTypesZad2.exe.config
+c:\users\axel\documents\visual studio 2012\Projects\TriangleTypesZad2\TriangleTypesZad2\bin\Debug\TriangleTypesZad2.exe
+c:\users\axel\documents\visual studio 2012\Projects\TriangleTypesZad2\TriangleTypesZad2\bin\Debug\TriangleTypesZad2.pdb
+c:\users\axel\documents\visual studio 2012\Projects\TriangleTypesZad2\TriangleTypesZad2\obj\Debug\TriangleTypesZad2.csprojResolveAssemblyReference.cache
+c:\users\axel\documents\visual studio 2012\Projects\TriangleTypesZad2\TriangleTypesZad2\obj\Debug\TriangleTypesZad2.Properties.Resources.resources
+c:\users\axel\documents\visual studio 2012\Projects\TriangleTypesZad2\TriangleTypesZad2\obj\Debug\TriangleTypesZad2.csproj.GenerateResource.Cache
+c:\users\axel\documents\visual studio 2012\Projects\TriangleTypesZad2\TriangleTypesZad2\obj\Debug\TriangleTypesZad2.exe
+c:\users\axel\documents\visual studio 2012\Projects\TriangleTypesZad2\TriangleTypesZad2\obj\Debug\TriangleTypesZad2.pdb
+c:\users\axel\documents\visual studio 2012\Projects\TriangleTypesZad2\TriangleTypesZad2\obj\Debug\TriangleTypesZad2.TriangleTypes.resources
+C:\NBU\4 sem\C#\C# Examp\Projects\TriangleTypesZad2\TriangleTypesZad2\bin\Debug\TriangleTypesZad2.exe.config
+C:\NBU\4 sem\C#\C# Examp\Projects\TriangleTypesZad2\TriangleTypesZad2\obj\Debug\TriangleTypesZad2.exe
+C:\NBU\4 sem\C#\C# Examp\Projects\TriangleTypesZad2\TriangleTypesZad2\obj\Debug\TriangleTypesZad2.pdb

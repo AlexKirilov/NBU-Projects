@@ -1,0 +1,9 @@
+<html>
+<head>
+<title> HomePage </title>
+</head>
+<FRAMESET rows="10%,*">
+<frame name="Logo" SRC="HomePage-Logo.html">
+<frame name="Main" SRC="HomePage-Main.html">
+</FRAMESET>
+</html>

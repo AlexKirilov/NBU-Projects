@@ -1,0 +1,21 @@
+/*---navigation---*/
+nav li 	{	list-style:  none outside; display: block;	}
+nav a  	{	display: block; text-decoration: none;	}
+
+nav ul	{	background: #CCC; overflow: hidden;	}
+nav > ul > li
+		{	float: left;	}
+nav ul li
+		{	background: #ACF;	}
+nav ul li a
+		{	padding: 10px 20px;	}
+nav ul li a:hover
+		{	background: #CDF;	}
+
+
+nav ul li ul	
+		{	display: none; width: 160px; position: absolute; left:0; top: 100px;	}
+nav li:hover > ul	
+		{	display: block;	}
+nav ul li ul li ul
+		{ top: 0; left: 100%;	}

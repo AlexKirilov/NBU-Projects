@@ -1,0 +1,18 @@
+<link href='http://fonts.googleapis.com/css?family=Akronim' rel='stylesheet' type='text/css'>
+
+*		{	padding:  0px; margin: 0px;	}
+
+body 	{	font: 16px/1.5 'Akronim' ,  sans-serif;	}
+
+h1						{	 text-align: center;	}
+
+p 						{	padding-bottom: 20px; overflow: hidden;	}
+
+#container 					{	width: 70% center;	margin: 15%;	}
+#container fieldset			{	margin: 20px 0; 	}
+#container fieldset legend	{	font-size: 18px ; 	}
+
+.main ul li  			{	padding: 8px 0;	overflow: hidden;}
+
+form label, form input 	{	display: block;	float: left; padding: 0 15px;	}
+form textarea			{	width: 80%;  overflow: hidden;	margin: 5px 10%;	}

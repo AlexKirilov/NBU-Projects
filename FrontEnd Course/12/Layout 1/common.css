@@ -1,0 +1,33 @@
+@import url("reset.css");
+@import url("typography.css");
+@import url("navigation.css");
+@import url("elements.css");
+
+
+#container 		{	width: 980px; margin:0 auto; border-top: 10px solid black; 	}
+
+#header #site-title		{	padding: 50px 20px 25px 20px; margin: 0; font-size: 2.5em; font-weight: normal; border-bottom:  1px solid #e0e0e0;	}
+#header #site-title	a	{	color: #000;	}
+#header #site-title	a span	{	color: #acacac;	}
+
+#footer 		{	 overflow: hidden;  	}
+#footer p		{	 padding: 0px; color: #999;  	}
+#footer div		{	 width: 50%; float: left; 	}
+#footer div.left	{	  text-align: left; 	}
+#footer div.right	{	  text-align: right; 	}
+
+#main 			{	border-bottom: 4px solid #f4f4f4;	}
+#main-inner		{	border-bottom: 1px solid #e0e0e0; overflow: hidden; 	}
+
+#main .inner	{	padding: 20px;		}
+#main .content,
+#main .sidebar	{	float: left; overflow: hidden;	}
+
+#main .content 	{	width: 63.25%;   margin-right: 4.08%;	}
+#main .sidebar	{	width: 32.65%;		}
+
+
+
+.content 		{		}
+
+.sidebar		{		}

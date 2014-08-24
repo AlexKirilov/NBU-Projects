@@ -1,0 +1,40 @@
+/*Основен CSS за страниците index.php ; createNewUser.php ; forgetpass.php ; */
+@import url(http://fonts.googleapis.com/css?family=Euphoria+Script|Engagement&subset=latin,latin-ext);
+* 				{	padding: 0; margin: 0;	}
+
+body 			{	width: 700px; font: 14px/1.5  Arial,Verdana, sans-serif; background-color: ccc; background: url(../images/backgr7.jpg) no-repeat; margin: 0 auto; 	}
+
+hr 				{	color: #ffffff;	margin-bottom: 10px;}
+h1 				{	font-family: 'Euphoria Script', cursive; padding: 20px 0px 20px 40%; font-size: 3.6em;  border-bottom:  1px solid #e0e0e0; 	}
+h3 				{	float: left;  margin: 10px 0 15px 0; 	}
+p 				{	font-size: 1em; padding: 8px 0 8px 0;	}
+a 				{	text-decoration: none;  border-bottom: dashed;  color: black; font-size: 1.2em;	}
+a:hover 		{	color: yellow;	}
+
+/* Основен контейнер */
+#main-cover		{	width: 700px; 	} 
+
+/* Заглавна част */
+.inner			{	border-top: 15px solid black; border-bottom: 4px solid #c0c0c0;	}
+
+
+/* Основно тяло */
+.main-body 		{	border-top: 1px solid white;	}
+
+/* Входна форма */
+.log-forma		{	margin: 20px 100px 20px 100px; float: left; 	}
+
+/* Часовник */
+.dateAndtime 	{	display: block; padding-top: 75px; font-size:  1.5em;  }
+
+/* Стил на бутоните */
+.buttonStyle 	{	font-family: 'latin-ext'; padding: 0 10px 0 10px;  margin-left: 15px; border-radius: 20%;	}
+#buttons		{	background-color: white;	}
+#buttons:hover 	{	color: lightgreen;	}
+
+/* Регистрационна форма в createNewUser.php */
+.loginform		{	margin: 30px 0 0 150px;	border-top: 2px solid white; padding-top: 45px}
+
+/* Линк към начална страница - index.php */
+.nachalo 		{	display: block; border: none; float: left; color: white; margin: 10px 0 0px 30px; 	}
+

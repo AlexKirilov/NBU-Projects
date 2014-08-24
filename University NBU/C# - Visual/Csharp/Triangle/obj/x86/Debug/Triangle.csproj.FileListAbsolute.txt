@@ -1,0 +1,38 @@
+C:\Users\Student\documents\visual studio 2010\Projects\Triangle\Triangle\bin\Debug\Triangle.exe
+C:\Users\Student\documents\visual studio 2010\Projects\Triangle\Triangle\bin\Debug\Triangle.pdb
+C:\Users\Student\documents\visual studio 2010\Projects\Triangle\Triangle\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\Student\documents\visual studio 2010\Projects\Triangle\Triangle\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Student\documents\visual studio 2010\Projects\Triangle\Triangle\obj\x86\Debug\Triangle.csproj.GenerateResource.Cache
+C:\Users\Student\documents\visual studio 2010\Projects\Triangle\Triangle\obj\x86\Debug\Triangle.exe
+C:\Users\Student\documents\visual studio 2010\Projects\Triangle\Triangle\obj\x86\Debug\Triangle.pdb
+C:\Users\bpunchev\Desktop\Triangle\Triangle\obj\x86\Debug\Triangle.pdb
+C:\Users\bpunchev\Desktop\Triangle\Triangle\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\bpunchev\Desktop\Triangle\Triangle\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\bpunchev\Desktop\Triangle\Triangle\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\bpunchev\Desktop\Triangle\Triangle\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\bpunchev\Desktop\Triangle\Triangle\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\bpunchev\Desktop\Triangle\Triangle\bin\Debug\Triangle.exe
+C:\Users\bpunchev\Desktop\Triangle\Triangle\bin\Debug\Triangle.pdb
+C:\Users\bpunchev\Desktop\Triangle\Triangle\obj\x86\Debug\Triangle.exe
+C:\Users\boyan\Desktop\Triangle\Triangle\obj\x86\Debug\Triangle.pdb
+C:\Users\boyan\Desktop\Triangle\Triangle\bin\Debug\Triangle.exe
+C:\Users\boyan\Desktop\Triangle\Triangle\bin\Debug\Triangle.pdb
+C:\Users\boyan\Desktop\Triangle\Triangle\obj\x86\Debug\Triangle.csproj.GenerateResource.Cache
+C:\Users\boyan\Desktop\Triangle\Triangle\obj\x86\Debug\Triangle.exe
+C:\Users\boyan\Desktop\Triangle\Triangle\bin\Debug\en\Triangle.resources.dll
+C:\Users\boyan\Desktop\Triangle\Triangle\obj\x86\Debug\WindowsFormsApplication1.GeometryMain.resources
+C:\Users\boyan\Desktop\Triangle\Triangle\obj\x86\Debug\WindowsFormsApplication1.GeometryMain.en.resources
+C:\Users\boyan\Desktop\Triangle\Triangle\obj\x86\Debug\en\Triangle.resources.dll
+C:\Users\boyan\Desktop\Triangle\Triangle\obj\x86\Debug\WindowsFormsApplicationTriangle.Properties.Resources.resources
+C:\Users\boyan\Desktop\Triangle\Triangle\obj\x86\Debug\Triangle.csprojResolveAssemblyReference.cache
+C:\Users\Axel\Desktop\Csharp\Triangle\obj\x86\Debug\Triangle.pdb
+C:\Users\Axel\Desktop\Csharp\Triangle\bin\Debug\Triangle.exe
+C:\Users\Axel\Desktop\Csharp\Triangle\bin\Debug\Triangle.pdb
+C:\Users\Axel\Desktop\Csharp\Triangle\bin\Debug\en\Triangle.resources.dll
+C:\Users\Axel\Desktop\Csharp\Triangle\obj\x86\Debug\Triangle.csprojResolveAssemblyReference.cache
+C:\Users\Axel\Desktop\Csharp\Triangle\obj\x86\Debug\WindowsFormsApplication1.GeometryMain.resources
+C:\Users\Axel\Desktop\Csharp\Triangle\obj\x86\Debug\WindowsFormsApplicationTriangle.Properties.Resources.resources
+C:\Users\Axel\Desktop\Csharp\Triangle\obj\x86\Debug\WindowsFormsApplication1.GeometryMain.en.resources
+C:\Users\Axel\Desktop\Csharp\Triangle\obj\x86\Debug\Triangle.csproj.GenerateResource.Cache
+C:\Users\Axel\Desktop\Csharp\Triangle\obj\x86\Debug\en\Triangle.resources.dll
+C:\Users\Axel\Desktop\Csharp\Triangle\obj\x86\Debug\Triangle.exe

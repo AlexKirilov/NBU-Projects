@@ -1,0 +1,19 @@
+*{
+    padding: 0px;
+    margin: 0px;
+ }
+ 
+ body {
+   font: 18px/1.5 Arial, Verdana, TimesNewRoman; 
+   padding: 10px;  
+  }
+  
+  h1 {
+     font: 20px/1.5 Times New Roman;
+     font-style: italic;
+     vertical-align: super;
+     color: #FF8040;
+     paddin-bottom: 10px;
+     padding-top: 10px;
+     text-align: center;
+   }
