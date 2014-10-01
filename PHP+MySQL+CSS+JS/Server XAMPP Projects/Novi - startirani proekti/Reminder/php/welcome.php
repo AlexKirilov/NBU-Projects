@@ -2,27 +2,32 @@
 <?php
 	session_start();
 
-	if ($_SESSION['is_logged']==false) {
+	if ($_SESSION['is_logged'] == false) {
 		header('location: ../index.php');
 	}
 ?>
 
 <!DOCTYPE html>
 <html>
-<header> 
+<head> 
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="../css/userAcc.css">
-	<script type="text/javascript"src="../Bib/jquery-2.1.1.min.js"></script>
+	<link rel="stylesheet" href="../css/data-pages.css">
+	<script type="text/javascript" src="../js/init.js"></script>
+	<script type="text/javascript" src="../Bib/jquery-2.1.1.min.js"></script>
 	
+
 	<title>Welcome </title>
 	
-</header>
+</head>
 <body>
 	<!-- Основен DIV - Conteiner -->
 	<div id="user-container">
 		<?php
+			
 			$date  = time();
 			$year  = date('Y', $date);
+
 		?>
 
 		<!-- Заглавана част на страницата -->
@@ -37,54 +42,136 @@
 
 		<!-- Основно Тяло - Body-->		
 		<div class="user-body">
+
 			<!-- DIV с меню изброяващо месеците в една година + функционалност -->
 			<div class="navi">
-				<p><?php echo $year ?></a><br>
-				<a  id="nav1" href="#">Clock</a>					
-				<a  id="nav2" href="#">January</a>
-				<a  id="nav2" href="#">February</a>
-				<a  id="nav2" href="#">March</a>
-				<a  id="nav2" href="#">April</a>
-				<a  id="nav2" href="#">May</a>
-				<a  id="nav2" href="#">June</a>
-				<a  id="nav2" href="#">July</a>
-				<a  id="nav2" href="#">August</a>
-				<a  id="nav2" href="#">September</a>
-				<a  id="nav2" href="#">October</a>
-				<a  id="nav2" href="#">November</a>
-				<a  id="nav2" href="#">December</a>
+				<p><?php echo $year;  ?></a><br>
+				<a  id="time" href="clock.php">Clock</a>					
+				<a  class="month" id="01" href="welcome.php?mon=01">January </a>
+				<a  class="month" id="02" href="welcome.php?mon=02">February</a>
+				<a  class="month" id="03" href="welcome.php?mon=03">March</a>
+				<a  class="month" id="04" href="welcome.php?mon=04">April</a>
+				<a  class="month" id="05" href="welcome.php?mon=05">May</a>
+				<a  class="month" id="06" href="welcome.php?mon=06">June</a>
+				<a  class="month" id="07" href="welcome.php?mon=07">July</a>
+				<a  class="month" id="08" href="welcome.php?mon=08">August</a>
+				<a  class="month" id="09" href="welcome.php?mon=09">September</a>
+				<a  class="month" id="10" href="welcome.php?mon=10">October</a>
+				<a  class="month" id="11" href="welcome.php?mon=11">November</a>
+				<a  class="month" id="12" href="welcome.php?mon=12">December</a>
 
 				<!-- Скрипт за извеждане на информацията на екрана - пренасочване от страница на страница -->
-				<script type="text/javascript">
-			
-					//$('#years').on('click', function (){
-					//	$('#frame').attr('src', '../php/years.php');
-					//});
 				
-					//$('#frame').hide();
-					$('#nav1').on('click', function () {
-					    $('#frame').attr('src', '../php/clock.php');
-					});
-
-					$('#nav2').on('click', function () {
-					    $('#frame').attr('src', '../php/years.php');
-					});
-
-				</script>
 			</div>  
 			<!-- /DIV navi-->
 			<!-- ******************************************************* -->
-			
+
 			<!-- DIV-ове за извеждане на информацията от базата данни в табличен вид -->
 			<div class="calendar">
-				<iframe src="#" id="frame"></iframe>
+
+					<?php
+						if (isset($_GET['mon'])) {		
+							myFunction();
+						}
+						
+						function myFunction () {
+
+							$buu = $_GET['mon'];
+							$GLOBALS['money'] = $buu;
+														
+							switch ($buu) {
+						 		case '01': $pname = 'Jan'; $fname = 'January';	break;
+						 		case '02': $pname = 'Feb'; $fname = 'February';	break;
+						 		case '03': $pname = 'Mar'; $fname = 'March';	break;
+						 		case '04': $pname = 'Apr'; $fname = 'April';	break;
+						 		case '05': $pname = 'May'; $fname = 'May';		break;
+						 		case '06': $pname = 'Jun'; $fname = 'June';		break;
+						 		case '07': $pname = 'Jul'; $fname = 'July';		break;
+						 		case '08': $pname = 'Aug'; $fname = 'August';	break;
+						 		case '09': $pname = 'Sep'; $fname = 'September';break;
+						 		case '10': $pname = 'Oct'; $fname = 'October';	break;
+						 		case '11': $pname = 'Nov'; $fname = 'November';	break;
+						 		case '12': $pname = 'Dec'; $fname = 'December';	break;
+						 	}
+
+						 	$date  = time();
+						 	$day   = date('d' , $buu);
+						 	$month = date('m' , $buu);
+						 	$year  = date('Y', $date);
+						 	$months = $fname; //date('F' , $date);
+						 	
+
+						 	$first_day = mktime(0, 0, 0, $buu, 1 , $year);
+						 	$title = date('F', $first_day);
+						 	$day_of_week = date ( 'D', $first_day);
+
+						 	switch ($day_of_week) {
+						 		case 'Mon':	$blank = 0;	break;
+						 		case 'Tue':	$blank = 1;	break; 
+						 		case 'Wed':	$blank = 2;	break;
+						 		case 'Thu':	$blank = 3;	break;
+						 		case 'Fri':	$blank = 4;	break;
+						 		case 'Sat':	$blank = 5;	break;
+						 		case 'Sun':	$blank = 6;	break;
+
+						 	}
+						 			 	
+							echo "<table border=3 width=680>";
+							echo "<tr><th colspan=50>$months $year</th>";
+							echo "<tr><td width=50>Mon</td><td width=50>Tue</td><td width=50>Wed</td><td width=50>Thu</td><td width=50>Fri</td><td width=50>Sat</td><td width=50>Sun</td>";
+							$day_in_month = cal_days_in_month(0, $buu, $year);
+							$day_counter = 1;
+							echo "<tr>";
+							while ($blank > 0) {
+								echo "<td></td>";
+								$blank--;
+								$day_counter++;
+							}
+							$day_number = 1;
+							$day_of_week = date('D', $first_day);
+							while ($day_number <= $day_in_month) {
+								echo "<td  ><a  id=day".$day_number." href=# >". $day_number ."</a></td>";
+								$day_number++;
+								$day_counter++;
+
+								if ( $day_counter > 7 ){
+									echo "</tr><tr>";
+									$day_counter = 1;
+
+								}
+							}
+							while ($day_counter > 1 && $day_counter <= 7 ) {
+								echo "<td> </td>";
+								$day_counter++;
+							
+							}
+							echo "</tr></table>";
+							
+						}
+
+						/*<script type="text/javascript">
+						$('.days').on('click', function () {
+							//var elements = document.getElementsByTagName(if());
+							var myVar = <?= json_encode('').id ?>;
+
+							$('#frame2').attr('src', '../php/GetSetData.php?idD='+myVar );
+
+						});
+					</script>*/
+					?>
+					<script type="text/javascript" src="../js/init.js"></script>
+					
+					
+
+				
 			</div>
 			<div class="calendar">
 				<iframe src="#" id="frame2"></iframe>
-			</div>
-			<!-- ******************************************************* -->
 
-			
+			</div>
+
+			<!-- ******************************************************* -->
+	
 		</div>
 		<!-- /DIV user-body -->
 
@@ -96,8 +183,5 @@
 		<!-- /DIV footer -->
 
 	</div>
-	
-
-	
 </body>
 </html>

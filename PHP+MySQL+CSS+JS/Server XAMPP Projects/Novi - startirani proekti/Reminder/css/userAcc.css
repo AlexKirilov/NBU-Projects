@@ -30,10 +30,17 @@ a:hover 		{	color: yellow;	}
 .navi a 			{	clear: both; text-decoration: none; display: block; float: left; border: none; padding: 5px 0 5px 5px;	}
 
 .calendar 			{	padding: 0 0 0 10px; display: block; float: left;	}
-.calendar iframe 	{	width: 700px; min-height: 200px; border: none; 	}
+.calendar iframe 	{	width: 700px; min-height: 210px; border: none; 	}
+
+#frame2				{	width: 700px; min-height: 480px; border: none; 	}
 
 .rowinput			{		}
 /***************************************************/
+
+/* Стил на бутоните */
+.buttonStyle 	{	font-family: 'latin-ext'; padding: 0 10px 0 10px;  margin-left: 15px; border-radius: 20%;	}
+#buttons		{	background-color: white;	}
+#buttons:hover 	{	color: lightgreen;	}
 
 /************** Footer *****************************/
 .footer 			{	border-top: 3px solid grey; margin-top: 50px;	}

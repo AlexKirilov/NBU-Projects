@@ -8,7 +8,7 @@
 		<?php
 
 
-		if ($_POST['submitForm']==1)
+		if (isset($_POST['submitForm']) && $_POST['submitForm']==1)
 		{
 			//Svurzvane kum localniq server
 				$dbhost	= 'localhost';
@@ -48,6 +48,8 @@
 					}
 				}
 				else echo "To short E-Mail";
+		}else{
+			echo "Refresh Madafaka";
 		}
 
 		?>

@@ -5,14 +5,13 @@
 	session_name('mysession');
 	session_start();
 
-	if ($_SESSION['is_logged']==true) {
+	if (!$_SESSION['is_logged']==true) {
+		
+	}else {
+		
 		header('location: php/welcome.php');
 	}
-	else {
-		//if ($_GET['error']==1) {
-		//	echo "wrong username or password";
-		//}
-	}
+	
 ?>
 
 <!DOCTYPE html>

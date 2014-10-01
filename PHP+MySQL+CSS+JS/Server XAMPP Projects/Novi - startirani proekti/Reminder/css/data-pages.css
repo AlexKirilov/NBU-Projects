@@ -1,4 +1,15 @@
-body 					{	font: 11px/1.5 Verdana, sans-serif;		}
-#container-page1		{		}
+@import url(http://fonts.googleapis.com/css?family=Euphoria+Script|Engagement&subset=latin,latin-ext);
 
+* 						{	padding: 0; margin: 0;	}
+
+body 					{	width: 700px; font: 14px/1.5  Arial,Verdana, sans-serif; margin: 0 auto; 	}
+input 					{	width: 310px;	}
+
+#container-page1		{		}
+#container-page2 		{		}
 td:hover				{	background-color: green;	}
+
+/* Стил на бутоните */
+.buttonStyle 	{	font-family: 'latin-ext'; padding: 0 10px 0 10px;  margin-left: 15px; border-radius: 20%;	}
+#buttons		{	background-color: white;	}
+#buttons:hover 	{	color: lightgreen;	}
