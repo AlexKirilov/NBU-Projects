@@ -7,9 +7,9 @@ input 					{	width: 310px;	}
 
 #container-page1		{		}
 #container-page2 		{		}
-td:hover				{	background-color: green;	}
+td:hover				{	background-color: green; color: white;	}
 
 /* Стил на бутоните */
 .buttonStyle 	{	font-family: 'latin-ext'; padding: 0 10px 0 10px;  margin-left: 15px; border-radius: 20%;	}
-#buttons		{	background-color: white;	}
-#buttons:hover 	{	color: lightgreen;	}
+#buttons		{	background-color: white; width: 80px; margin: 10px 0 0 57%;	}
+#buttons:hover 	{	color: green;	}

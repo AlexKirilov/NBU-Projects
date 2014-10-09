@@ -1,2 +1,0 @@
-<?php 
-global $banani;

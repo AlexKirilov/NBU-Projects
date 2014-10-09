@@ -1,0 +1,58 @@
+* 				{	padding: 0; margin: 0;	}
+
+body 			{	width: 800px; font: 14px/1.5  Arial,Verdana, sans-serif; background-color: #ccc; background: url(../images/backgr7.jpg) no-repeat; margin: 0 auto; 	}
+
+/*hr 				{	color: #ffffff;	margin-bottom: 10px;}*/
+h4 				{	font-family: 'Euphoria Script', cursive; float: left;font-size: 2em;	}
+
+p 				{	font-size: 1em; padding: 8px 0 8px 0;	}
+a 				{	text-decoration: none;  color: black; 	}
+a:hover 		{	color: yellow; 	}
+
+#user-container		{	width: 800px; 	} 
+
+/*************** Top Part - Page *******************/
+.inner-user			{	border-top: 15px solid black; border-bottom: 4px solid #c0c0c0;	padding: 10px; height: 30px; 		}
+
+#title-color 		{	color: red;	}
+.right-side 		{ 	display: block; float: right;	}
+.inner-user p 		{	float: left; padding-right: 50px; font-size: 1.2em;		}
+.inner-user a 		{	text-decoration: none; color: darkred;  font-weight: bold;	}
+.welcome 			{	font-weight: bolder;	}
+.welcomeName		{	font-style: italic; color: orange;	}
+
+/****************************************************/
+
+/*************** Middle Part - Page *****************/
+.user-body			{	width: 100%; padding: 20px 0 0 0; display: inline-block; 	}
+
+.navi				{	border-right: 3px solid #c6c7c1; width: 80px; float: left; display: block;  	}
+.navi ul 			{	padding: 50% 0% 13% 25%;	}
+.navi ul li 		{	overflow: hidden; padding: 10px 0 0 0;	}
+.navi a 			{	width: 72px; clear: both; text-decoration: none; display: block; float: left; padding: 5px 0 5px 5px;	}
+.navi a:hover 		{	box-shadow: 0 1px 6px 0 white;	}
+.dateAndtime 		{	box-shadow: 2px 4px 3px 1px  darkblue;  font-family: 'latin-ext'; margin: 5px; font-weight: bold; font-style: italic; color: darkgrey; width: 180px; float: right;	}
+/*.dateAndtime 		{	position: absolute; top: 10px; left: 95px;	}*/
+.calendar 			{	padding: 0 0 0 10px; display: block; float: left;	}
+.calendar iframe 	{	width: 700px; min-height: 210px; border: none; 	}
+
+#frame2				{	width: 700px;  border: none; margin-top: 35px; 	}
+#frame3				{	width: 700px; min-height: 100px; border: none; margin-top: 5px; 	}
+.Itable td			{	padding-left: 5px;	}
+.frow 				{	color: yellow;	}
+#frow 				{	color: orange;		}
+#frow6 				{	color: orange;		}
+#frow7 				{	color: orange;		}
+#frow6:hover 		{	color: white;	font-weight: bold;	}
+#frow7:hover 		{	color: red;	font-weight: bolder;	}
+.rowinput			{		}
+/***************************************************/
+
+/* Стил на бутоните */
+/*.buttonStyle 	{	font-family: 'latin-ext'; padding: 0 10px 0 10px;  margin-left: 15px; border-radius: 20%;	}
+#buttons		{	background-color: white; width: 100px;}
+#buttons:hover 	{	color: purple;	}*/
+
+/************** Footer *****************************/
+.footer 			{	border-top: 3px solid grey; margin-top: 50px;	}
+.footer p 			{	float: right;	}

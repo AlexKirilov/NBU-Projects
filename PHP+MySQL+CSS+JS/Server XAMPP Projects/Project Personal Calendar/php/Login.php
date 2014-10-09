@@ -15,6 +15,7 @@
 	//parametri premahvashti praznite prostranstva predi i sled vuvedenite danni
 	$loginUser = trim($_POST['IDLogin']);
 	$loginPass = trim($_POST['pass']);
+	//$loginPassCoded = md5($loginPass);               za kodirane na Password s MD5
 	//echo $loginUser. ' | ' . $loginPass.'<br>';
 	
 	//proverka za nali4nostta na potrebitelq
@@ -35,40 +36,16 @@
 		while ($row = mysql_fetch_array($selectData) )
 		{
 			if($row[1]== $loginUser && $row[2]==$loginPass){
+				$selectID   = $row[0];
 				$selectUser = $row[1];
 				$selectPass = $row[2];
 				$_SESSION['is_logged']=true;
 				$_SESSION['Name'] = $loginUser;
+				$_SESSION['ID'] = $selectID;
 				header('location: ../php/welcome.php');
 			}
 		}
-		/*$selectData  = mysql_query("SELECT 'Username', 'Password' FROM USERS");
-			if (!$selectData ) 
-			{
-				die('Could not get data: ' . mysql_error());
-			}
-			else {
-				while ($row = mysql_fetch_array($selectData) )
-				{
-					echo "$row[0]. $row[1] <br/>";
-					if($row[0]== $loginUser && $row[1]==$loginPass){
-						$selectUser = $row[0];
-						$selectPass = $row[1];
-						break;
-					}
-					else { echo "Wrong data input"; }
-				}*/
-
-		/*if ( $selectUser == $loginUser && $selectPass == $loginPass )
-		{
-				echo "Welcome". $_POST['IDLogin'].'<br >';
-				$_SESSION['is_logged']=true;
-				//header('location: welcome.php');
-
-			
-		} else {*/
 			echo '<br>'.'Sorry wrong Username or Password';
-		//}
 	}
 
 mysql_close($conn);

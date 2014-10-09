@@ -13,7 +13,7 @@
 	//echo 'Connect successfully<br />';
 
 			$UsernameAdd   = trim($_POST['IDUserName']);
-			$PasswordAdd   = trim($_POST['pass']);		//md5 ima problem
+			$PasswordAdd   = trim($_POST['pass']);	
 			$RePasswordAdd = trim($_POST['re-pass']);
 			$FirstNameAdd  = trim($_POST['first-name']);
 			$SecondNameAdd = trim($_POST['second-name']);
@@ -32,16 +32,24 @@
 		else {
 			while ($row = mysql_fetch_array($selectData) )
 			{
-				if($row[1]== $UsernameAdd){
-					$check = $row[1];
+				if($row[1]== $UsernameAdd || $row[3]==$EMailAdd ){
+					$checkUser = $row[1];
+					$checkMail = $row[3];
 					break;
 				}
 			}
 		}
+			/*
+		//Proverka za veche sus6testvuvasht E-mail addres.
+		while ($row = mysql_fetch_array($selectData) 
+		{
+			if($row[3]==$EMailAdd) {
+				header('Location: ../php/createNewUser.php?error=5'); //5 = Email already Exist
+			}
+		}*/
 
-		if ($check != $UsernameAdd)	
-		{										/////////////////////////////////////////////////////////////////
-
+		if ($checkUser != $UsernameAdd)	
+		{										
 			if ($PasswordAdd == $RePasswordAdd)
 			{
 
@@ -71,7 +79,7 @@
 			}
 		}
 		else {
-			header('Location: ../php/createNewUser.php?error=4'); //4 = UserExist
+			header('Location: ../php/createNewUser.php?error=4'); //4 = User Exist
 		}
 
 	}
@@ -80,4 +88,6 @@
 	}
 
 	mysql_close($conn);
+
+	//Ostavashti proverki: Fname and Sname / E-mail - vuvejdane i sushtestvuvasht.
 ?>

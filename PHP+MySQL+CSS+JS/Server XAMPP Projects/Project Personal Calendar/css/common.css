@@ -30,7 +30,7 @@ a:hover 		{	color: yellow;	}
 /* Стил на бутоните */
 .buttonStyle 	{	font-family: 'latin-ext'; padding: 0 10px 0 10px;  margin-left: 15px; border-radius: 20%;	}
 #buttons		{	background-color: white;	}
-#buttons:hover 	{	color: lightgreen;	}
+#buttons:hover 	{	color: red;	}
 
 /* Регистрационна форма в createNewUser.php */
 .loginform		{	margin: 30px 0 0 150px;	border-top: 2px solid white; padding-top: 45px}

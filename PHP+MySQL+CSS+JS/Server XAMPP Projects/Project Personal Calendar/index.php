@@ -4,13 +4,15 @@
 <?php
 	session_name('mysession');
 	session_start();
-
+	if(isset($_SESSION['is_logged']))
+	{
 	if (!$_SESSION['is_logged']==true) {
 		
 	}else {
 		
 		header('location: php/welcome.php');
 	}
+}
 	
 ?>
 
