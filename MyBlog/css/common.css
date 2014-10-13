@@ -1,0 +1,67 @@
+@import url(http://fonts.googleapis.com/css?family=Euphoria+Script|Engagement&subset=latin,latin-ext);
+
+*               { padding:0; margin:0; }
+
+body            { font: 14px/1.5 Verdana, Arial, sans-serif;  background:#272322 url(../images/body_bg.jpg) 50% top repeat-x }
+
+hr 			    { border-radius: 90%; margin: 50px 0 10px 0;	}
+
+.clear          { clear:both; }
+
+.name		    { padding-left: 15px; font-size:45px; color: black;  font-family: 'Euphoria Script', cursive; font-size: 3em;   }
+
+#cover          {  }
+.main 		    {  display: block; width: 100%; padding-bottom: 25px; text-align: justify;	}
+.main-cover     {  width: 220px; background: url('../images/cover1.jpg');  border: 1px solid gray; padding: 50px 0 100px; margin: 65px 0 0px 50px; }
+
+.cover-navi           { width:100%; padding: 50px 5% 0 ; }
+.cover-navi ul li     { display:block; overflow:  hidden; padding: 3% 10px 0 5%; }
+.cover-navi ul li a   { display:block; text-decoration: none;  font-size: 1.5em; color: #FFF; border-bottom: dashed; width:75%; border-color: #444444;}
+.cover-navi ul li a:hover {  color: orange; }
+
+	.main .cover-box      {  width: 35%;	}
+/*	.main .cover-name     {  font-family: 'Euphoria Script', cursive; font-size: 3em; } */
+	.cover-major  		  {  font-family: 'Euphoria Script', cursive; font-size: 1.8em; padding-left: 5%;}
+
+	.main .photos 		  {  float: left; width: 80%; margin: 90px 0 0 10%;	}
+	.main .photos img 	  {  display: block; width: 130px; height: 130px; float: left; padding: 0px; margin: 0px 0 30px 30px;	}
+
+	.page-header		  {	position: absolute; top: 1%; left: 46%;	}
+	.page-name 			  {	font-family: 'Euphoria Script', cursive; font-size: 2.8em; padding-left: 5%; font-style: italic;	}
+	  
+	#content 			  { width:60%; padding: 150px 13px 0 0; color: #FFF;  margin: 0px auto 30px auto; text-align: justify;	}
+		
+	#main_content 		  { display:inline; width:60%; }
+	#main_content p 	  { width: 60% }
+	.two_columns 		  { float:left;  }
+
+	h2, h3 				  { padding: 15px 0; }
+
+	#main_content .two_columns p 	{ width:350px;}
+	#main_content .right_column 	{  float: right;}
+
+	#sidebar 			{ float:right; display:inline; width:247px; margin-left:30px}
+
+.footer p			    { color: darkorange; text-align: right; padding: 0 50px 5px 0; }
+
+.diary 					{ color: #FFF;	width: 80%; float: right; margin: 90px 100px 50px 0px;	}
+.diary fieldset 		{ padding: 15px 0;	font-family: justify; margin-top: 35px; border-radius: 10%;	}
+form label, form input 	{ display: block;	float: left; padding: 0 15px; }
+form textarea			{ width: 80%;  overflow: hidden;	margin: 5px 10%; padding-top: 15px;	}
+textarea 				{ width: 300px; height: 100px; margin-top: 20px;	}
+.diary label 			{ font-size: 1.2em;	}
+.diary p, legend	  	{ padding:0 15px; color: #FFF;	}
+.diary input 			{ padding: 8px; font-size: 1.0em; margin: 12px;	}
+
+.education  			{ width: 77%;  float: right; display: block; color: #FFF; margin: 90px 100px 0 0 ; text-align: justify;	}
+.education img 			{ padding: 20px;	}
+
+.contact 				{ width: 90%;  color: #FFF;	}
+.contact p 				{ padding-top: 20px; margin-left: 40%; font-size: 1.4em; 	}
+.contact p:first-child 	{ padding-top: 100px; }
+.map iframe				{ border: 1px solid #CCC; margin-left: 35%; margin-top: 40px; }
+
+.navi-in ul li				{ display: block; overflow: hidden; float: left; font-size: 1.7em; padding: 22px 30px 0 30px; margin-right: 2%; }
+.navi-in ul li:first-child	{ margin-left: 10%;   }
+.navi-in ul li a 			{ text-decoration: none; color: black; font-family: 'Arial Black';overflow: hidden; }
+.navi-in ul li a:hover		{ color: orange; }
