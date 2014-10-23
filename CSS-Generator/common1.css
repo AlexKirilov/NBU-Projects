@@ -1,0 +1,27 @@
+*				{	margin: auto; padding: 0;	}
+
+body 			{	font: 14px/1.5 Verdana, Arial,  sans-serif; width:900px;  background-image: url(images/room1.jpg);background-repeat: repeat;  background-color: darkgrey;	}
+
+/***** HEADER ******/
+
+.header 			{	margin-bottom: 40px;	}
+.golden-border 		{	background: -moz-linear-gradient(yellow, gold, yellow);
+						background: -o-linear-gradient(yellow, gold, yellow);
+						background: linear-gradient(yellow, gold, yellow);
+						background: -webkit-linear-gradient(yellow, gold, yellow);
+						height: 20px; width: 100%; border: 1px solid black; border-radius: 25px ; text-align:  center;	}
+.site-name 			{	background: black; width: 90%; margin: 0 5% 0 5%; height: 70px; text-align: center; color: white;border-radius: 0% 0 15% 15%;  opacity: 0.8; filter: alpha(opacity=80);		}
+h1 					{	padding-top: 2%; text-transform: capitalize;	}
+
+.main-body 			{		}
+.inner-left 		{	float: left; display: block; width: 17%;	}
+.menu-bar 			{	width: 100%; 	}
+.menu-bar p 		{	width: 110%;	}
+.menu-bar a 		{	margin: 0 2% 0 2%; text-decoration: none; color: skyblue; 	}
+.menu-bar ul 		{	opacity: 0.7; filter: alpha(opacity=70); /* For IE8 and earlier */ background: black; border-left: 1px solid darkgrey ; border-right: 1px solid darkgrey; width: 90%; margin-left: 16px; 	}
+.menu-bar ul li 	{	list-style-type: none; 	}
+.menu-bar ul li:hover 	{	box-shadow: 0 3px 6px 0 white;	}
+.menu-bar ul li a:hover {	color: white; font-weight: bold;	}
+.save-bar 			{	margin-top: 40px;	}
+
+#save 				{	border: 2px solid grey; background: white; width: 77%; float: right; min-height: 350px; opacity: 0.7;	}

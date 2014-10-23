@@ -1,0 +1,33 @@
+*				{	margin: auto; padding: 0;	}
+
+body 			{	font: 14px/1.5 Verdana, Arial,  sans-serif; width:900px;  background-image: url(images/dark2.jpg);background-repeat: repeat;  background-color: darkgrey;	}
+
+/***** HEADER ******/
+
+.header 			{	margin-bottom: 80px;	}
+.golden-border 		{	background: -moz-linear-gradient(yellow, orange, yellow);
+						background: -o-linear-gradient(yellow, orange, yellow);
+						background: linear-gradient(yellow, orange, yellow);
+						background: -webkit-linear-gradient(yellow, orange, yellow);
+						height: 22px; width: 100%; border: 1px solid black; border-radius: 25px ; text-align:  center;	}
+.site-name 			{	background: black; width: 90%; margin: 0 5% 0 5%; height: 70px; text-align: center; color: white;border-radius: 0% 0 15% 15%;  opacity: 0.8; filter: alpha(opacity=80);		}
+h1 					{	padding-top: 2%; text-transform: capitalize;	}
+
+.main-body 			{		}
+.inner-left 		{	float: left; display: block; width: 17%;	}
+.menu-bar 			{	width: 100%; 	}
+.menu-bar p 		{	width: 110%;	}
+.menu-bar p 		{	margin: 0 2% 0 2%; text-decoration: none; color: white; 	}
+.menu-bar ul 		{	background: #000; border-left: 1px solid darkgrey ; border-right: 1px solid darkgrey; width: 90%; margin-left: 16px; 	}
+.menu-bar ul li 	{	list-style-type: none; 	}
+.menu-bar ul li:hover 	{	box-shadow: 0px 1px 3px 0px darkgrey;	
+							-moz-box-shadow: 0px 1px 3px 0px darkgrey;
+							-webkit-box-shadow: 0px 1px 3px 0px darkgrey;
+						}
+.menu-bar ul li p:hover {	color: orange;	}
+
+.save-bar 			{	 min-width: 168px; margin-top: 20px;	}
+.save-bar ol 		{	background: black; width: 82%; border-left: 1px solid darkgrey ; border-right: 1px solid darkgrey;	}
+.save-bar ol li 	{	list-style-type: none; color: white; padding-left: 3px;	}
+
+#save 				{	border: 2px solid grey; background: grey; width: 77%; float: right; min-height: 350px; opacity: 0.7;	}
