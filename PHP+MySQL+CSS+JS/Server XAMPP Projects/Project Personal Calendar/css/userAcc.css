@@ -32,26 +32,23 @@ a:hover 		{	color: yellow; 	}
 .navi a 			{	width: 72px; clear: both; text-decoration: none; display: block; float: left; padding: 5px 0 5px 5px;	}
 .navi a:hover 		{	box-shadow: 0 1px 6px 0 white;	}
 .dateAndtime 		{	box-shadow: 2px 4px 3px 1px  darkblue;  font-family: 'latin-ext'; margin: 5px; font-weight: bold; font-style: italic; color: darkgrey; width: 180px; float: right;	}
-/*.dateAndtime 		{	position: absolute; top: 10px; left: 95px;	}*/
 .calendar 			{	padding: 0 0 0 10px; display: block; float: left;	}
 .calendar iframe 	{	width: 700px; min-height: 210px; border: none; 	}
 
 #frame2				{	width: 700px;  border: none; margin-top: 35px; 	}
 #frame3				{	width: 700px; min-height: 100px; border: none; margin-top: 5px; 	}
 .Itable td			{	padding-left: 5px;	}
+.Itable #CB 		{	max-width: 50px; 	}
 .frow 				{	color: yellow;	}
 #frow 				{	color: orange;		}
 #frow6 				{	color: orange;		}
 #frow7 				{	color: orange;		}
-#frow6:hover 		{	color: white;	font-weight: bold;	}
-#frow7:hover 		{	color: red;	font-weight: bolder;	}
+#frow6:hover 		{	color: white;	font-weight: bold;		}
+#frow7:hover 		{	color: red;	    font-weight: bolder;	}
 .rowinput			{		}
+.deleteCB 			{	max-width: 20px;	}
+#delButton 			{	color: green; width: 50px; float: right; margin: 15px 30px 0 0;	}
 /***************************************************/
-
-/* Стил на бутоните */
-/*.buttonStyle 	{	font-family: 'latin-ext'; padding: 0 10px 0 10px;  margin-left: 15px; border-radius: 20%;	}
-#buttons		{	background-color: white; width: 100px;}
-#buttons:hover 	{	color: purple;	}*/
 
 /************** Footer *****************************/
 .footer 			{	border-top: 3px solid grey; margin-top: 50px;	}

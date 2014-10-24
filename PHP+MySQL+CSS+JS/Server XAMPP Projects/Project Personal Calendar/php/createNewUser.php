@@ -1,10 +1,5 @@
 <!-- Създаване на нов потребител -->
-<?php 
-	//if ($_GET['error']==1) echo "The password doesn`t match";
-	//if ($_GET['error']==2) echo "The E-Mail doesn`t match";
-	//if ($_GET['error']==3) echo "wrong input".'<br>';
-	//if ($_GET['error']==4) echo "This username is already exist";
-?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,7 +12,7 @@
 			 {
 			 	$GLOBALS['error'] = $_GET['error'];
 			 }
-			 ?>
+		?>
 </head>
 <body>
   <div id="main-cover">

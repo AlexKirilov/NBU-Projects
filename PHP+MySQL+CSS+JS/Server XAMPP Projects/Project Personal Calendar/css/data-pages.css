@@ -13,3 +13,4 @@ td:hover				{	background-color: green; color: white;	}
 .buttonStyle 	{	font-family: 'latin-ext'; padding: 0 10px 0 10px;  margin-left: 15px; border-radius: 20%;	}
 #buttons		{	background-color: white; width: 80px; margin: 10px 0 0 57%;	}
 #buttons:hover 	{	color: green;	}
+.Itable td:last-child 	{	width: 50px;	}

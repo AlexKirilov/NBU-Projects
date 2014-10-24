@@ -3,13 +3,12 @@
 <!-- Проверка за налична сесия и препращане към вътрешна страница-->
 <?php
 	session_name('mysession');
-	session_start();
+	session_start(); 	//Начало на сесията 
+	//Проверка за log-нат потребител. Дали съществува запис в Сесията.
 	if(isset($_SESSION['is_logged']))
 	{
-	if (!$_SESSION['is_logged']==true) {
-		
-	}else {
-		
+		//Проверка ако съществува запис го препраща ме в личната страница
+	if ($_SESSION['is_logged']==true) {
 		header('location: php/welcome.php');
 	}
 }
@@ -23,8 +22,6 @@
 		<link rel="stylesheet" href="css/common.css">
 
 		<title>Login</title>
-
-
 	</head>
 	<body>
 	<!-- Основен Контейнер -->
@@ -40,9 +37,23 @@
 			<div class="main-body">
 				<!-- Съдаване на Базата данни -->
 				<?php
+					//Проверяваме дали базата данни съществува. Ако не създава нова.
+					$dbhost	= 'localhost';
+					$dbuser = 'root';
+					$dbpass = '';
+
+					$conn = mysql_connect($dbhost, $dbuser, $dbpass);
+					if (!$conn) {
+						die ('Could not connect: '.mysql_error());
+					}
+					mysql_select_db('CalendarDB');
+
+					if (!mysql_select_db('CalendarDB'))
+					{
 			
 					require_once("php/createDB.php");
 					require_once("php/createDBTable.php");
+					}
 				?>
 				
 				<!-- Входна форма-->
@@ -59,7 +70,7 @@
 						<br>
 						<hr>
 						<a href="php/forgetpass.php" class="buttonStyle">Forget Password</a>
-						<a href="php/createNewUser.php" class="buttonStyle">CreateAcc</a>
+						<a href="php/createNewUser.php" class="buttonStyle">Create Account</a>
 					</div>
 					
 				</form>
@@ -73,13 +84,11 @@
 								$('.dateAndtime').load('php/clock.php').fadeIn('slow');
 							}, 1000 );
 					</script>
-
 			</div>
 
 			<!-- Край на страницата - дъно -->
 			<div class="footer">
 				
-
 			</div>
 		</div>
 	</body>

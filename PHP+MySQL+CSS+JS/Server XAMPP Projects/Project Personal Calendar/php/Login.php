@@ -21,12 +21,6 @@
 	//proverka za nali4nostta na potrebitelq
 	mysql_select_db('CalendarDB');
 	$selectData  = mysql_query("SELECT * FROM USERS");
-	
-	//$selectPass  = mysql_query("SELECT 'Password' FROM USERS \n"."");
-	//echo  $selectUser . '<br>'. $selectPass;
-	//$sql = "SELECT `Username`,`Password` FROM `USERS` \n"	. "\n"	. "";
-	//$returnuser = mysql_query( $selectUser, $conn);
-	//$returnpass = mysql_query( $selectPass, $conn);
 
 	if (!$selectData ) 
 	{

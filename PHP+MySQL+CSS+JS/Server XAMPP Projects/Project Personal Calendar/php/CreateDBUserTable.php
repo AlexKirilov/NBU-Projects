@@ -4,7 +4,6 @@ if ($_SESSION['is_logged'] == false) {
 		header('location: ../index.php');
 	} else 
 	{
-		//$dbName = "DB_".$_SESSION['Name'];
 		$dbhost	= 'localhost';
 		$dbuser = 'root';
 		$dbpass = '';
@@ -20,13 +19,12 @@ if ($_SESSION['is_logged'] == false) {
 
 		$sql =  "CREATE TABLE dbUSER (".
 					"ID				INT				NOT NULL	AUTO_INCREMENT,".
-					//"year		 	INT	 	 		NOT NULL,".
 					"month		 	INT	 	 		NOT NULL, ".
 					"day		 	INT	 	 		NOT NULL, ".
 					"User_ID		INT 			NOT NULL,".
 					"User_Name		VARCHAR(50) 	COLLATE utf16_general_ci,".
 					"User_data  	TEXT 		 	COLLATE utf16_general_ci,".
-					"PRIMARY KEY(ID));";/*".$dbName."*/
+					"PRIMARY KEY(ID));";
 						
 			$retval = mysql_query( $sql, $conn );
 			if (! $sql) 

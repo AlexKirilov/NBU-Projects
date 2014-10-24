@@ -15,8 +15,7 @@
 			die ('Could not connect: '.mysql_error());
 		}
 		mysql_select_db('CalendarDB');
-		//$dbName = "DB_".$_SESSION['Name'];
-		$selectData  = mysql_query("SELECT * FROM  dbUSER");/*$dbName*/
+		$selectData  = mysql_query("SELECT * FROM  dbUSER");
 		if (!$selectData ) 
 		{
 			require_once("../php/CreateDBUserTable.php");
@@ -31,10 +30,10 @@
 				$UserName 	   = $_SESSION['Name'];	
 				$UserData	   = trim($_POST['userInfo']);
 		
-		if (strlen($UserData) > 5 )
+		if (strlen($UserData) >= 2 )
 		{
 
-			$sql = "INSERT INTO `calendardb`. dbUSER (`ID`, `month`, `day`, `User_ID`, `User_Name`, `User_data`) /*".$dbName."*/
+			$sql = "INSERT INTO `calendardb`. dbUSER (`ID`, `month`, `day`, `User_ID`, `User_Name`, `User_data`) 
 				    VALUES ('0', '$DateMonth', '$DateDay', '$UserID', '$UserName', '$UserData');";
 					 	
 			mysql_select_db('CalendarDB');

@@ -32,7 +32,7 @@
 					die ('Could not connect: '.mysql_error());
 				}
 				mysql_select_db('CalendarDB');
-			$selectData  = mysql_query("SELECT * FROM  dbUSER");/*$dbName*/
+			$selectData  = mysql_query("SELECT * FROM  dbUSER");
 				if (!$selectData ) 
 				{
 					require_once("../php/CreateDBUserTable.php");
@@ -96,6 +96,7 @@
 							myFunction();
 						}
 						
+						//Функция за извеждане на съответния календарен месец
 						function myFunction () {
 
 							$buu = $_GET['mon'];
@@ -169,6 +170,8 @@
 						}
 					?>						
 			</div>
+
+			<!-- Извеждане на таблица с въведените от потребители данни за съответният ден и месец -->
 			<div class="calendar" id="frame2">
 				<?php
 					if(isset($_GET['day']))
@@ -187,6 +190,7 @@
 					}
 				?>
 			</div>
+			<!-- Форма за въвеждане и записване на данните в БД за съответния User -->
 			<div class="calendar" id="frame3">
 				<?php
 					if(isset($_GET['I']))
@@ -212,28 +216,38 @@
 						}
 						else 
 						{
+						  echo "<form action='delData.php' method=POST>";
 							echo "<table border=3 width=680 class=Itable >";
 							echo "<tr><th colspan=50>$month $year</th>";
-							echo "<tr> <td> Day</td> <td> Information </td> </tr>";
+							echo "<tr> <td width=40 > Day</td> <td> Information </td> <td> Delete </td> </tr>";
 							while ($row = mysql_fetch_array($selectData) )
 							{
-								echo "<tr>";
-								if ($row[3] == $_SESSION['ID'])
+								
+								if ( $row[3] == $_SESSION['ID'] )
 								{
-									if($row[1] == $_GET['mon'] ){
+									echo "<tr>";
+									if( $row[1] == $_GET['mon'] )
+									{
 										$selectMon = $row[1];
 										$selectDay = $row[2];
 										$selectDat = $row[5];
 
 										echo "<td>".$selectDay."</td>";
 										echo "<td>".$selectDat."</td>";	
+										echo "<td><input type='checkbox' name='checkbox[".$row[0]."]'  id='CB' /></td>";
 									}
+									echo "</tr>";
 								}
-								echo "</tr>";
+								
 							}
 							echo "</table>";
+							echo "<input type='submit' name='submit' value='Delete' id='delButton'/>";
+						  echo "</form>";
 						}
 					}
+				?>
+				<?php
+
 				?>
 			</div>
 			<!-- ******************************************************* -->
