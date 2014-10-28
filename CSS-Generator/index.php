@@ -15,7 +15,7 @@ session_start();
     {
             require_once ("php/CreateDBUser.php");     
     }
-    echo "<p id=sessionI>".$_SESSION['Name']."</p>";
+   // echo "<p id=sessionI>".$_SESSION['Name']."</p>";
 ?>
 <!DOCTYPE html>
 <html>
@@ -43,21 +43,21 @@ session_start();
         <div class="inner-left">
             <div class="menu-bar">
                     <p class="golden-border">Menu Bar</p>
-                    <ul id="ul_for_li" style="display: none">
-                            <li><p id="MulCol"   onclick="HideNshow()"> Multiple Columns</p></li>
-                            <li><p id="BorRad"   onclick="HideNshow()"> Border radius</p></li>				
+                    <ul id="ul_for_li" ><!--style="display: none"-->
+                            <li><p id="MulCol"> Multiple Columns</p></li>
+                            <li><p id="BorRad" > Border radius</p></li>				
                             <li><p id="TexSha"   onclick="HideNshow()"> Text shadow</p></li>
                             <li><p id="BoxSha"   onclick="HideNshow()"> Box Shadow</p></li>
                             <li><p id="BoxRes"   onclick="HideNshow()"> Box resize</p></li>
                             <li><p id="BoxSiz"   onclick="HideNshow()"> Box sizing</p></li>
-                            <li><p id="Transit"  onclick="HideNshow()"> Transition</p></li>
-                            <li><p id="Transfo"  onclick="HideNshow()"> Transform</p></li>
-                            <li><p id="FontFace" onclick="HideNshow()"> Font face</p></li>
-                            <li><p id="Outline"  onclick="HideNshow()"> Outline</p></li>
-                            <li><p id="RGBA"     onclick="HideNshow()"> RGBA</p></li>
+                            <li><p id="Transit"  > Transition</p></li>
+                            <li><p id="Transfo"  > Transform</p></li>
+                            <li><p id="FontFace" > Font face</p></li>
+                            <li><p id="Outline" > Outline</p></li>
+                            <li><p id="RGBA"> RGBA</p></li>
                     </ul>
-                    <p class="golden-border"></p>
-                    <script type="text/javascript" >
+                    <p class="golden-border" ></p>
+<!--                    <script type="text/javascript" >
                         $(document).ready(function() {
                            $('#ul_for_li').slideDown (4000);//({
                                 //height:'toggle'}, 'slow');
@@ -65,14 +65,12 @@ session_start();
                              //$('.site-name').animate({
                              //   height:'toggle'}, 'slow');
                             $('.site-name').animate({fontSize:'2.5em'},"slow");
-                            $('.save-bar').slideDown (4300);
-                            
+                            $('.save-bar').slideDown (4300);                            
                         });
-
-                    </script>
+                    </script>-->
             </div>
 
-            <div class="save-bar" style="display: none">
+            <div class="save-bar" ><!--style="display: none"-->
                 <p class="golden-border">Save Bar</p>
                 <!--   <input type="button" name="BANANI" id="css_button_ajax_call" value="PUPESH"/> -->
                 <?php 
@@ -84,36 +82,16 @@ session_start();
 
                         echo "</ol>";
                 ?>
-    <!--                    <style> 
-                    #load {
-                        -webkit-animation: myfirst 13s; /* Chrome, Safari, Opera */
-                        animation: myfirst 13s;
-                    }
 
-                    /* Chrome, Safari, Opera */
-                    @-webkit-keyframes myfirst {
-                        0%   {color: red;}
-                        25%  {color: yellow;}
-                        50%  {color: skyblue;}
-                        100% {color: green;}
-                    }
-
-                    /* Standard syntax */
-                    @keyframes myfirst {
-                        0%   {color: red;}
-                        25%  {color: yellow;}
-                        50%  {color: skyblue;}
-                        100% {color: green;}
-                    }
-                    </style>-->
-                    <p class="golden-border"><span  id="load"> Load</span></p>
-                    <script type="text/javascript">
-                    var auto_refresh = setInterval (
-                            function (){
-                                    $('#load').hide('1000');
-                                    $('#load').show('1300');
-                            }, 3000 );
-                    </script>
+                <p class="golden-border"><span  id="load"> Load </span></p>
+                
+<!--                <script type="text/javascript">
+                var auto_refresh = setInterval (
+                        function (){
+                                $('#load').hide('1000');
+                                $('#load').show('1300');
+                        }, 3000 );
+                </script>-->
             </div>
         </div><!-- END Left Panel menu + panel Save -->
 
@@ -122,12 +100,7 @@ session_start();
         <!-- Right Panel -->
         <div class="inner-right">
             <div class="enterData" id="opp">
-                <p>omfg</p><br>
-                <p>omfg</p><br>
-                <p>omfg</p><br>
-                <p>omfg</p><br>
-                <p>omfg</p><br>
-                <p>omfg</p><br>
+
             </div>
 
             <div  class="visualization" id="save">
@@ -144,7 +117,7 @@ session_start();
                     <label class="MandjaSgrozde"></label>
                     <div class="jsbuttons">
                         <button type="submit" name="copy" id="copyBut">COPY</button><br>
-                        <button type="submit" name="save">Save</button>
+                        <button type="submit" name="save" id="saveThisSht">Save</button>
                     </div>
                 </form>                    
             </div>

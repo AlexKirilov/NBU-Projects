@@ -43,13 +43,13 @@ require("getIP.php"); //Get the reall IP
             {
               die('Could not enter data: ' . mysql_error());
             }
-            echo "<p id = sessionI >Session Start successfully Create new guest\n</p>";
+            //echo "<p id = sessionI >Session Start successfully Create new guest\n</p>";
         }//IP exist - welcome to user
         elseif ($boolIP == TRUE) 
         {
             $_SESSION['is_logged'] = true;
             $_SESSION['Name'] = $guestTrue;
-            echo "<p id = sessionI >Session Start successfully\n</p>";
+            //echo "<p id = sessionI >Session Start successfully\n</p>";
         }  
     }  	
 mysql_close($conn);
