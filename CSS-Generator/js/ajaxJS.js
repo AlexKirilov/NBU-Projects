@@ -22,15 +22,15 @@ jQuery(document).ready(function($) {
        
     });
     
-      /*$('#BANANI').click(function(){
+      $('#BANANI').click(function(){
         $.ajax({
             url: '../CSS-Generator/php/ajaxPHP.php',
             type: 'post',
-            data: { ajax_data_s: },
+            data: { ajax_data_s: raw_data },
             success: function(data) {
                 console.log(data);
             }
         });
         });
         
-});*/
+});

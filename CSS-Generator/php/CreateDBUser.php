@@ -1,48 +1,55 @@
 <?php
 
-require("DBConnection.php");
-require("getIP.php");
-//Дата на създаване не потребителя
-//$date  = time();
-//$day   = date('d' , $date);
-//$month = date('m' , $date);
-//$year  = date('Y' , $date);
-//$AddDate = $day."/".$month."/".$year;
+require("DBConnection.php");// MySQL Connection
+require("getIP.php"); //Get the reall IP
 
-//Дали да правим проверка за IP адреса на потребителя, за да се избегнат различните 
-//Guest-ove с различните Browser-s и тези IP-a  ги запазваме в базата данни ???????
-    echo $user_ip."<br>";
+    //Checking for local IP
     if ($user_ip === '::1'){
         $user_ip = '127.0.0.1';
     }
-    $user_ip = ip2long ($user_ip);
-    echo $user_ip."<br>";
-    //Проверява ме за вече съществъващ гост
+    
+    $user_ip = ip2long ($user_ip);//Comverting the IP into INT to be saved in DB
+
     $selectData  = mysql_query("SELECT * FROM users"); 
     if (!$selectData ) 
     {
             die('Could not get data: ' . mysql_error());
     }
     else {
-        $i = 1; // index za poreden nomer na potrebitelq.
+        $boolIP = FALSE;
+        $i = 1; // index for next guest, how`s not at the system.
         $guest = 'Guest'.$i;
         while ($row = mysql_fetch_array($selectData) )
         {
-            if($row[1] == $guest && $row[2] != $user_ip )
+            //Checking for existing IP
+            if ( $user_ip == $row[2])
             {
-                $i++;
-                $guest = 'Guest'.$i;
-            }     
+                $boolIP = TRUE;
+                $guestTrue = $row[1];
+            }else{
+            $i++;
+            $guest = 'Guest'.$i;
+            }
         }
-        $sql = "INSERT INTO `cssgendb`.`users` (`ID`, `Guest`, 'IPAdd') 
-                VALUES ('0', '$guest', '$user_ip');";
-        $_SESSION['is_logged'] = true;
-        $_SESSION['Name'] = $guest;
-    }
-    $retval = mysql_query( $sql, $conn );
-    if(! $retval )
+        // IP doestn`exist - creating the Account
+        if ($boolIP == FALSE)
         {
-          die('Could not enter data: ' . mysql_error());
-        }
-        echo "Session Start successfully\n";	
+            $sql = "INSERT INTO users ( ID , Guest , IPAdd )
+                    VALUES ('0','$guest','$user_ip')";
+            $_SESSION['is_logged'] = true;
+            $_SESSION['Name'] = $guest;
+            $retval = mysql_query( $sql, $conn );
+            if(! $retval )
+            {
+              die('Could not enter data: ' . mysql_error());
+            }
+            echo "<p id = sessionI >Session Start successfully Create new guest\n</p>";
+        }//IP exist - welcome to user
+        elseif ($boolIP == TRUE) 
+        {
+            $_SESSION['is_logged'] = true;
+            $_SESSION['Name'] = $guestTrue;
+            echo "<p id = sessionI >Session Start successfully\n</p>";
+        }  
+    }  	
 mysql_close($conn);

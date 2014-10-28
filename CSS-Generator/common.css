@@ -13,9 +13,11 @@ body 			{	font: 14px/1.5 Verdana, Arial,  sans-serif; width:900px;  background-i
 .site-name 			{	background: black; width: 90%; margin: 0 5% 0 5%; height: 70px; text-align: center; color: white;border-radius: 0% 0 15% 15%;  opacity: 0.8; filter: alpha(opacity=80);		}
 h1 					{	padding-top: 2%; text-transform: capitalize;	}
 
-.main-body 			{		}
+/*******  MAIN BODY  *******/
+.main-body 		{		}
+/*******  LEFT PANEL  *******/
 .inner-left 		{	float: left; display: block; width: 17%;	}
-.menu-bar 			{	width: 100%; 	}
+.menu-bar 		{	width: 100%; 	}
 .menu-bar p 		{	width: 110%;	}
 .menu-bar p 		{	margin: 0 2% 0 2%; text-decoration: none; color: white; 	}
 .menu-bar ul 		{	background: #000; border-left: 1px solid darkgrey ; border-right: 1px solid darkgrey; width: 90%; margin-left: 16px; 	}
@@ -30,4 +32,26 @@ h1 					{	padding-top: 2%; text-transform: capitalize;	}
 .save-bar ol 		{	background: black; width: 82%; border-left: 1px solid darkgrey ; border-right: 1px solid darkgrey;	}
 .save-bar ol li 	{	list-style-type: none; color: white; padding-left: 3px;	}
 
-#save 				{	border: 2px solid grey; background: grey; width: 77%; float: right; min-height: 350px; opacity: 0.7;	}
+
+#sessionI               {       color: white;   }
+
+/*******  RIGHT PANEL  *******/
+.inner-right            {	border: 2px solid grey; background: grey; width: 77%; float: right; min-height: 350px; opacity: 0.7;	}
+
+.enterData              {       width: 50%; min-height: 60%; float: left; background: greenyellow;    }
+.visualization          {       width: 50%; min-height: 60%; float: right; background: orangered;  }
+.codeview               {       width: 98%; min-height: 100px; margin: 20px 10px 20px 10px; float: inherit; background: windowframe;    }
+.codeview form          {       margin: 10px; min-height: 90px; padding: 10px;   }
+.MandjaSgrozde          {       width: 70%; min-height: 50px; padding: 10px; background: chocolate; float: left; display: block;    }
+.jsbuttons              {       float: right; margin: 5px; width: 80px; }
+#copyBut                {       height: 30px; background-color: yellow;  margin-bottom: 10px;  }
+
+
+.footer                 {       width: 100%; clear: both; padding-top: 30px; color: white;    }
+.footer hr              {       border-radius: 80%; border-color: red;
+                                -moz-color:red; -moz-border-radius: 80%;
+                                -webkit-color:red; -webkit-border-radius: 80%;
+                                -linear-color:red; -linear-border-radius: 80%;
+                                -o-color:red; -o-border-radius: 80%;    }
+.footer a               {       float: left; display: block; clear: both; color: orange;   }
+.footer p               {       float: right;    }

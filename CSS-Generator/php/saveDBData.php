@@ -4,37 +4,35 @@ require("DBConnection.php");
 
 if ($_SESSION['is_logged'] == TRUE) {
 
-    $guest = $_SESSION['Name'];
+    $guestDB = $_SESSION['Name'];
     
-    // SELECT COUNT(*) as Total FROM users GROUP BY Guest
-    
-    $selectData  = mysql_query("SELECT * FROM users");
+    $selectData  = mysql_query("SELECT * FROM code");
     if (!$selectData ) 
     {
-            require_once("../php/CreateDBUserTable.php");
-            die('Could not get data: ' . mysql_error());
+        die('Could not get data: ' . mysql_error());
     }
-    else {
+    else 
+    {       
         $UserCode; //Тук поставя ме Данните при натискане на Save Button-a
-        //Нужна е проверка за достигането на лимита на Всеки Гост до 5 CSS-a
+        $CodeName; //Imeto na code
         $Max = 1;
-       /* while ($row = mysql_fetch_array($selectData) )
+        // SELECT COUNT(*) as Total FROM users GROUP BY Guest
+        while ($row = mysql_fetch_array($selectData) )
         {
-            if($row[1] == $guest && $row[2] < 5 )
+            if( $guestDB == $row[1] && $Max < 6 )
             {
-               if ($Max < $row[2]) { $Max = $row[2]; }
-               // //Iskame da prowerim koq e poslednata stojnost
-                //while($row = mysql_fetch_array($selectData) )
-                
+                $Max++;
             }
-            
-        }*/ // Pravilen kod za SQL SELECT `Guest`,`AddAt`, COUNT(*) FROM `users` GROUP BY `Guest` 
-        $sql = mysql_query("SELECT COUNT(*) as Total FROM users GROUP BY Guest");
-        echo $sql;
-        $Max++; // Увеличаваме с единица за да можем да запазим данни на следващата стойност
-        //$sql = "INSERT INTO `CSSGenDB`.`users` (`CodeID`, `User_code`) 
-          //      VALUES ('0', '$UserCode');";
+        }
+        
+        if ($Max <= 5) {
+            $sql = "INSERT INTO code ( ID , GuestID , CodeID ,CodeName, User_code )
+                    VALUES ( '0','$guestDB','$Max','$CodeName', '$UserCode' )";
+        }
+        else {
+            //Izvajda JS suobshtenie za maksimalen broi zapisi
+            echo 'Sorry you`ve reached the maximum options for saving data. /n ';
+        }
     }
-
 }
-
+mysql_close($conn);
