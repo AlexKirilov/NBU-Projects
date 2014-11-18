@@ -2,11 +2,17 @@
 //Creating DB Table
     require("DBConnection.php");
 
-$sql =  "CREATE TABLE users (".
-			"ID			INT		NOT NULL	AUTO_INCREMENT,".
-			"Guest  		VARCHAR(60) 	COLLATE utf16_general_ci,".
-                        "IPAdd			INT UNSIGNED    NULL            DEFAULT NULL,".
-			"PRIMARY KEY(ID));";
+$sql =  "CREATE TABLE IF NOT EXISTS `users` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(60) DEFAULT NULL,
+  `password` varchar(32) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `first_name` varchar(255) NOT NULL,
+  `last_name` varchar(255) NOT NULL,
+  PRIMARY KEY (`ID`),
+  UNIQUE KEY `username` (`username`),
+  KEY `password` (`password`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf16 AUTO_INCREMENT=3 ;";
 				
 	$retval = mysql_query( $sql, $conn );
 	if (! $sql) 
