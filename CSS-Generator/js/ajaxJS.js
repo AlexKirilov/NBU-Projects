@@ -1,4 +1,4 @@
-jQuery(document).ready(function($) {
+function init(){
     var raw_data = new Array() ;
     var clicked_val;
     $('#ul_for_li').children('li').click(function() {
@@ -92,4 +92,4 @@ jQuery(document).ready(function($) {
         });
         });
         
-});
+};

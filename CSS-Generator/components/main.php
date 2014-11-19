@@ -81,3 +81,6 @@
                 </form>                    
             </div>
         </div><!-- END Right Panel -->
+        <script>
+            init();
+        </script>
