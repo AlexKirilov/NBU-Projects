@@ -16,7 +16,7 @@ h1 			{	padding-top: 2%; text-transform: capitalize;	}
 /*******  MAIN BODY  *******/
 .main-body 		{		}
 #main-container {
-	background-color: #ffffff;
+	background-color: #ffffff; 
 }
 form legend{
 	text-align: center;
