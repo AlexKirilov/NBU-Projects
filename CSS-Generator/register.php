@@ -9,8 +9,13 @@ if (! mysql_select_db ( 'CSSGenDB' )) {
 }
 require_once ("php/classUser.php");
 $user = new User ();
-if (isset ( $_POST ['username'] ) && isset ( $_POST ['password'] )) {
-	if ($user->login ( $_POST ['username'], $_POST ['password'] )) {
+if (isset ( $_POST ['username'] ) && isset ( $_POST ['password'] ) 
+		&& isset($_POST['password']) 
+		&& isset($_POST['email'])
+		&& isset($_POST['fistname'])
+		&& isset($_POST['lastname'])
+) {
+	if ($user->register($_POST ['username'], $_POST ['password'], $_POST ['email'], $_POST ['fistname'], $_POST ['lastname'])) {
 		include ("components/main.php");
 	} else {
 		echo "false";

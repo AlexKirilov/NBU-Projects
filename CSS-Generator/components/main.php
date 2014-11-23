@@ -65,10 +65,7 @@
             <div  class="visualization" id="save">
 
                 <div id="input_text"></div>
-                    <div id="the_example" style="width:140px;height:140px;background-color:red;">
-
-
-                    </div>
+                    <div id="the_example" style="width:140px;height:140px;background-color:red;"></div>
             </div>
 
             <div class="codeview">

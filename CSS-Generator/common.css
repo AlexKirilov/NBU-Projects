@@ -40,8 +40,29 @@ form #error{
 }
 form input[type="submit"]{
 	clear: both;
-	float: left;
+}
+input.textfield {
+	width: 150px;
+	border: 1px solid #000000;
+}
+.error{
+	color: red;
+}
+form label.error{
 	margin-left: 50%;
+	text-align: left;
+}
+input.error{
+	border: 1px solid red;
+}
+#registerform{
+	display: none;
+}
+.formactions{
+	text-align: center;
+}
+.inputfield, .formactions {
+	margin-top: 15px;
 }
 /*******  LEFT PANEL  *******/
 .inner-left 		{	float: left; display: block; width: 14%;	}

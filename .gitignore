@@ -34,3 +34,10 @@ Icon
 # Files that might appear on external disk
 .Spotlight-V100
 .Trashes
+/CSS-Generator/.buildpath
+/CSS-Generator/.project
+/CSS-Generator/.settings/.jsdtscope
+/CSS-Generator/.settings/org.eclipse.php.core.prefs
+/CSS-Generator/.settings/org.eclipse.wst.common.project.facet.core.xml
+/CSS-Generator/.settings/org.eclipse.wst.jsdt.ui.superType.container
+/CSS-Generator/.settings/org.eclipse.wst.jsdt.ui.superType.name
