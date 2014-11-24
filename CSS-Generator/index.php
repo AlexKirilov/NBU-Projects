@@ -4,24 +4,23 @@ session_start ();
 // Checks if the database exists and if the db is not found - tries to create it.
 require_once ("php/DBConnection.php"); // MySQL Connection';
                                        // Cheking for existing DB & Tables
-if (! mysql_select_db ( 'CSSGenDB' )) {
+if (!$db->selectDB($DATABASE )) {
 	require_once ("php/createDB.php"); // Creating DB
 	require_once ("php/createDBTable.php"); // Table fo Guest IDName and date on reg
 	require_once ("php/createDBData.php"); // Table for Code
 }
 // Includes the user class and creates instance of it.
 require_once ("php/classUser.php");
-$user = new User ();
+$user = new User ($db);
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 <title></title>
 <link rel="stylesheet" type="text/css" href="common.css">
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/ajaxJS.js"></script>
-<script type="text/javascript"
-	src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+<script type="text/javascript"	src="js/jquery.validate.min.js"></script>
 </head>
 <body>
 	<div id="main-container">

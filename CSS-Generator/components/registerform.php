@@ -40,7 +40,6 @@
 <script>
 	$("#registerform").validate({
 		submitHandler: function(form) {
-		jQuery('#registerform').submit(function(){
 			var data = jQuery('#registerform').serialize();
 			$.ajax({
 					url:"register.php",
@@ -55,7 +54,6 @@
 						}
 					}});
 			return false;
-		})
 		}
 	});
 	$('#loginformbutton').click(function(){

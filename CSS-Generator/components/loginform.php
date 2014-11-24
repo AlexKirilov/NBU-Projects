@@ -23,7 +23,6 @@
 <script>
 	$("#loginform").validate({
 	  submitHandler: function(form) {
-		  jQuery('#loginform').submit(function(){
 		        var data = jQuery('#loginform').serialize();
 		        $.ajax({
 		            url:"login.php",
@@ -38,7 +37,6 @@
 		                }
 		          }});
 		          return false;
-		    })
 	  }
 	});
 	$('#registerformbutton').click(function(){

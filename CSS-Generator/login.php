@@ -8,7 +8,7 @@ if (! mysql_select_db ( 'CSSGenDB' )) {
 	require_once ("php/createDBData.php"); // Table for Code
 }
 require_once ("php/classUser.php");
-$user = new User ();
+$user = new User ($db);
 if (isset ( $_POST ['username'] ) && isset ( $_POST ['password'] )) {
 	if ($user->login ( $_POST ['username'], $_POST ['password'] )) {
 		include ("components/main.php");
