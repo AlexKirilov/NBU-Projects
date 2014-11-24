@@ -4,7 +4,7 @@ session_start ();
 // Checks if the database exists and if the db is not found - tries to create it.
 require_once ("php/DBConnection.php"); // MySQL Connection';
                                        // Cheking for existing DB & Tables
-if (!$db->selectDB($DATABASE )) {
+if (!$db->selectDB($DATABASE)) {
 	require_once ("php/createDB.php"); // Creating DB
 	require_once ("php/createDBTable.php"); // Table fo Guest IDName and date on reg
 	require_once ("php/createDBData.php"); // Table for Code

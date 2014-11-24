@@ -91,5 +91,11 @@ function init(){
             }
         });
         });
+      $('.ajax').click(function(e){
+    		$('#maincontent').load('editdetails.php');
+    		return false;
+    	});
         
 };
+
+

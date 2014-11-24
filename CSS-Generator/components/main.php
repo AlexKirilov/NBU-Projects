@@ -1,5 +1,11 @@
 <!-- Left Panel menu + panel Save -->
         <div class="inner-left">
+        	<div class="userinfo">
+        		<ul>
+        			<li>Welcome <?php echo $user->first_name?>,</li>
+        			<li><a href="editdetails.php" class="ajax">Edit Details</a></li>
+        		</ul>
+        	</div>
             <div class="menu-bar">
                     <p class="golden-border">Menu Bar</p>
                     <ul id="ul_for_li" ><!--style="display: none"-->
@@ -57,7 +63,7 @@
 
         <!-- Osnovno componenti -->
         <!-- Right Panel -->
-        <div class="inner-right">
+        <div class="inner-right" id="maincontent">
             <div class="enterData" id="opp">
 
             </div>

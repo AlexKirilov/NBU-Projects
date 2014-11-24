@@ -36,7 +36,7 @@ class DB{
 			$value = mysql_real_escape_string($value);
 			$update_query .= "`$field` ='$value' ";
 		}
-		$update_query = "UPDATE $table $update_query WHERE $where ";
+		$update_query = "UPDATE $table SET $update_query WHERE $where ";
 		$result = $this->query($update_query);
 		return mysql_affected_rows($this->_link);
 	}
@@ -45,6 +45,7 @@ class DB{
 		$this->query($query);
 	}
 	function query($query){
-		return mysql_query($query, $this->_link);
+		$res = mysql_query($query, $this->_link) or die (mysql_error($this->_link));
+		return $res;
 	}
 }
