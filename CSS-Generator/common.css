@@ -1,28 +1,90 @@
-*                       {	margin: auto; padding: 0;	}
+* {
+	margin: auto;
+	padding: 0;
+}
 
-body 			{	font: 14px/1.5 Verdana, Arial,  sans-serif; width:1200px;  background-image: url(images/dark2.jpg);background-repeat: repeat;  background-color: darkgrey;	}
+body {
+	font: 14px/1.5 Verdana, Arial, sans-serif;
+	width: 1200px;
+	background-image: url(images/dark2.jpg);
+	background-repeat: repeat;
+	background-color: darkgrey;
+}
 
 /***** HEADER ******/
+.header {
+	margin-bottom: 50px;
+}
 
-.header 		{	margin-bottom: 50px;	}
-.golden-border 		{	background: -moz-linear-gradient(yellow, orange, yellow);
-						background: -o-linear-gradient(yellow, orange, yellow);
-						background: linear-gradient(yellow, orange, yellow);
-						background: -webkit-linear-gradient(yellow, orange, yellow);
-						height: 22px; width: 100%; border: 1px solid black; border-radius: 25px ; text-align:  center;	}
-.site-name 		{	background: black; width: 90%; margin: 0 5% 0 5%; height: 70px; text-align: center; color: white;border-radius: 0% 0 15% 15%;  opacity: 0.8; filter: alpha(opacity=80);		}
-h1 			{	padding-top: 2%; text-transform: capitalize;	}
+.golden-border, .header {
+	background: -moz-linear-gradient(#cdcdcd, #cccccc, #000000);
+	background: -o-linear-gradient(y#cdcdcd, #cccccc, #000000);
+	background: linear-gradient(#cdcdcd, #cccccc, #000000);
+	background: -webkit-linear-gradient(#cdcdcd, #cccccc, #000000);
+    border: 1px solid #000000;
+   
+    color: #ffffff;
+    font-weight: bold;
+    height: 30px;
+    text-align: center;
+    width: 100%;
+}
+.header h1{
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+	color: #ffffff;
+}
+.golden-border{
+	 border-radius: 25px;
+}
+.site-name {
+	background: black;
+	width: 90%;
+	margin: 0 5% 0 5%;
+	height: 70px;
+	text-align: center;
+	color: white;
+	border-radius: 0% 0 15% 15%;
+	opacity: 0.8;
+	filter: alpha(opacity = 80);
+}
+.login {
+	clear: both;
+}
+.login p{
+	padding: 10px;
+	text-align: center;
+}
+fieldset{
+	border: none;
+}
+h1 {
+	padding-top: 2%;
+	text-transform: capitalize;
+}
 
 /*******  MAIN BODY  *******/
-.main-body 		{		}
-#main-container {
-	background-color: #ffffff; 
+.main-body {
+	
 }
-form legend{
+
+#main-container {
+	background-color: #ffffff;
+}
+#sample {
+    clear: both;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    min-height: 30px;
+}
+
+form legend {
 	text-align: center;
 	font-weight: bold;
 }
-form label{
+
+form label {
 	font-weight: bold;
 	width: 50%;
 	clear: both;
@@ -30,77 +92,197 @@ form label{
 	padding-right: 10px;
 	text-align: right;
 }
-form input{
+
+form input {
 	width: 100px;
 }
-form #error{
+
+form #error {
 	color: red;
 	text-align: center;
 	display: none;
 }
-form input[type="submit"]{
+
+form input[type="submit"] {
 	clear: both;
 }
+
 input.textfield {
 	width: 150px;
 	border: 1px solid #000000;
 }
-.error{
+
+.error {
 	color: red;
 }
-form label.error{
+
+form label.error {
 	margin-left: 50%;
 	text-align: left;
 }
-input.error{
+
+input.error {
 	border: 1px solid red;
 }
-#registerform{
+
+#registerform {
 	display: none;
 }
-.formactions{
+
+.formactions {
 	text-align: center;
 }
+
 .inputfield, .formactions {
 	margin-top: 15px;
 }
 /*******  LEFT PANEL  *******/
-.inner-left 		{	float: left; display: block; width: 14%;	}
-.menu-bar 		{	width: 100%; 	}
-.menu-bar p 		{	width: 110%;	}
-.menu-bar p 		{	margin: 0 2% 0 2%; text-decoration: none; color: white; 	}
-.menu-bar ul 		{	background: #000; border-left: 1px solid darkgrey ; border-right: 1px solid darkgrey; width: 90%; margin-left: 19px; 	}
-.menu-bar ul li 	{	list-style-type: none; 	}
-.menu-bar ul li:hover 	{	box-shadow: 0px 1px 3px 0px darkgrey;	
-							-moz-box-shadow: 0px 1px 3px 0px darkgrey;
-							-webkit-box-shadow: 0px 1px 3px 0px darkgrey;
-						}
-.menu-bar ul li p:hover {	color: orange;	}
+.userinfo {
+	margin-bottom: 15px;
+}
 
-.save-bar 		{	min-width: 187px; margin-top: 20px;	}
-.save-bar ol 		{	background: black; width: 82%; border-left: 1px solid darkgrey ; border-right: 1px solid darkgrey;	}
-.save-bar ol li 	{	list-style-type: none; color: white; padding-left: 3px;	}
+.inner-left {
+	float: left;
+	display: block;
+	width: 14%;
+}
 
+.menu-bar p {
+	width: 110%;
+}
 
-#sessionI               {       color: white;   }
+.menu-bar p {
+	margin: 0 2% 0 2%;
+	text-decoration: none;
+	color: white;
+}
+
+.userinfo ul, .menu-bar ul {
+	width: 90%;
+	margin-left: 19px;
+}
+.menu-bar ul {
+	background: #000;
+	border-left: 1px solid darkgrey;
+	border-right: 1px solid darkgrey;
+}
+.userinfo ul li, .menu-bar ul li {
+	list-style-type: none;
+}
+.userinfo ul li a{
+	color: #000000;
+}
+
+.userinfo ul li:hover, .menu-bar ul li:hover {
+	box-shadow: 0px 1px 3px 0px darkgrey;
+	-moz-box-shadow: 0px 1px 3px 0px darkgrey;
+	-webkit-box-shadow: 0px 1px 3px 0px darkgrey;
+}
+
+.menu-bar ul li p:hover {
+	color: orange;
+}
+
+.save-bar {
+	min-width: 187px;
+	margin-top: 20px;
+}
+
+.save-bar ol {
+	background: black;
+	width: 82%;
+	border-left: 1px solid darkgrey;
+	border-right: 1px solid darkgrey;
+}
+
+.save-bar ol li {
+	list-style-type: none;
+	color: white;
+	padding-left: 3px;
+}
+
+#sessionI {
+	color: white;
+}
 
 /*******  RIGHT PANEL  *******/
-.inner-right            {	border: 2px solid grey; background: grey; width: 80%; float: right; min-height: 350px; opacity: 0.7;	}
+.inner-right {
+	width: 80%;
+	float: right;
+	min-height: 350px;
+	opacity: 0.7;
+}
 
-.enterData              {       width: 35%; min-height: 60%; float: left; background: greenyellow;    }
-.visualization          {       width: 63%; min-height: 60%; float: right; background: orangered;     }
-.codeview               {       width: 98%; min-height: 100px; margin: 20px 10px 20px 10px; float: inherit; background: windowframe;    }
-.codeview form          {       margin: 1.6%; min-height: 90%;   }
-.MandjaSgrozde          {       width: 85%; min-height: 50px; padding: 10px; background: chocolate; float: left; display: block;    }
-.jsbuttons              {       float: right; margin: 5px; width: 80px; }
-#copyBut                {       width: 60px; height: 40px; background-color: darkgrey;  margin-bottom: 10px; font-weight: bold;   }
+.enterData {
 
+	}
 
-.footer                 {       width: 100%; clear: both; padding-top: 30px; color: white;    }
-.footer hr              {       border-radius: 80%; border-color: red;
-                                -moz-color:red; -moz-border-radius: 80%;
-                                -webkit-color:red; -webkit-border-radius: 80%;
-                                -linear-color:red; -linear-border-radius: 80%;
-                                -o-color:red; -o-border-radius: 80%;    }
-.footer a               {       float: left; display: block; clear: both; color: orange;   }
-.footer p               {       float: right;    }
+.visualization {
+	width: 63%;
+	min-height: 60%;
+	float: right;
+	background: orangered;
+}
+
+.codeview {
+	margin: 20px 10px 20px 10px;
+}
+
+.codeview form {
+	margin: 1.6%;
+	min-height: 90%;
+}
+
+.MandjaSgrozde {
+	width: 85%;
+	min-height: 50px;
+	padding: 10px;
+	background: chocolate;
+	float: left;
+	display: block;
+}
+
+.jsbuttons {
+	float: right;
+	margin: 5px;
+	width: 80px;
+}
+
+#copyBut, #saveCode, form input[type="submit"], form input[type="button"] {
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 40px;
+	background-color: darkgrey;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+.footer {
+	width: 100%;
+	clear: both;
+	color: white;
+}
+
+.footer hr {
+	border-radius: 80%;
+	border-color: red;
+	-moz-color: red;
+	-moz-border-radius: 80%;
+	-webkit-color: red;
+	-webkit-border-radius: 80%;
+	-linear-color: red;
+	-linear-border-radius: 80%;
+	-o-color: red;
+	-o-border-radius: 80%;
+}
+
+.footer a {
+	float: left;
+	display: block;
+	clear: both;
+	color: orange;
+}
+
+.footer p {
+	float: right;
+}

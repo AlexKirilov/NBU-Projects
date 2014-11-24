@@ -1,19 +1,35 @@
 <?php
 require ("DBConnection.php"); // MySQL Connection
-require ("getIP.php"); // Get the reall IP
 class User {
 	public $username;
 	public $user_id;
+	public $password;
+	public $first_name;
+	public $email;
+	public $last_name;
 	public $is_loged = false;
 	private $session_timeout = 300000;
 	private $db;
 	function __construct(DB $db) {
-		$this->is_loged = $this->isLogged ();
 		$this->db = $db;
+		$this->is_loged = $this->isLogged ();
 	}
 	function isLogged() {
 		if (isset ( $_SESSION ['logged'] ) && ! empty ( $_SESSION ['logged'] ) && time () - $_SESSION ['lastAction'] < $this->session_timeout) {
-			return true;
+			$user_id = $_SESSION['userid'];
+			$query = "SELECT * FROM users WHERE ID='$user_id' ";
+			$result = $this->db->query($query);
+			if ($row = mysql_fetch_array($result)){
+				$this->username = $row['username'];
+				$this->last_name = $row['last_name'];
+				$this->first_name = $row['first_name'];
+				$this->email =  $row['email'];
+				$this->password = $row['password'];
+				$this->user_id = $row['ID'];
+				return true;
+			} else {
+				return false;
+			}
 		} else {
 			return false;
 		}
@@ -28,6 +44,11 @@ class User {
 			$_SESSION ['logged'] = true;
 			$_SESSION['userid'] = $row['ID'];
 			$_SESSION ['lastAction'] = time ();
+			$this->username = $row['username'];
+			$this->last_name = $row['last_name'];
+			$this->first_name = $row['first_name'];
+			$this->email =  $row['email'];
+			$this->user_id = $row['ID'];
 			return true;
 		} else {
 			return false;
@@ -63,12 +84,11 @@ class User {
 		$fields = array();
 		$fields['password'] =  md5($password);
 		$fields['email'] = $email;
-		$fields['first name'] = $firstname;
-		$fields['last name'] = $lastname;
+		$fields['first_name'] = $firstname;
+		$fields['last_name'] = $lastname;
 		$result = $this->db->update('users',$fields,"ID = '$user_id'");
 		$_SESSION['logged'] = true;
 		$_SESSION['lastAction'] = time();
-		$_SESSION['userid'] = $username;
 		return true;
 	}
 }

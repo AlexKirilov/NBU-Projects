@@ -4,8 +4,9 @@
     $DBHOST	= 'localhost';
 	$DBUSER = 'root';
 	$DBPASS = '';
-	$DATABASE = 'CSSGenDB';
+	$DATABASE = 'cssgendb';
 
 	$db = new DB($DBHOST,$DBUSER, $DBPASS);
 	$conn = $db->_link;
+	$db->selectDB($DATABASE);
 
