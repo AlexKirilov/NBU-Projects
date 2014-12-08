@@ -16,7 +16,7 @@ if ($user->is_loged) {
     }
     else 
     {       
-        $UserCode; //Ð¢ÑƒÐº Ð¿Ð¾Ñ�Ñ‚Ð°Ð²Ñ� Ð¼Ðµ Ð”Ð°Ð½Ð½Ð¸Ñ‚Ðµ Ð¿Ñ€Ð¸ Ð½Ð°Ñ‚Ð¸Ñ�ÐºÐ°Ð½Ðµ Ð½Ð° Save Button-a
+        $UserCode; //Тук поставя ме Данните при натискане на Save Button-a
         $CodeName; //Imeto na code
         $Max = 1;
         //SELECT COUNT(*) as Total FROM users GROUP BY Guest
