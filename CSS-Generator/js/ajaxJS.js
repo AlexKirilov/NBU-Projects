@@ -485,11 +485,24 @@ function init(){
 	    			  alert('There was an error saving the request.');
 	    		  } else {
 	    			  $('#savedclasses').html(result);
+	    			  initLoad();
 	    		  }
 	    	  });
     	  }
       });
-        
+      initLoad();
 };
-
-
+function initLoad(){
+	$('#savedclasses ol li').click(function(){
+		var data = {
+				id : jQuery(this).data('id')
+		}
+		$.post('php/loadDBData.php', data, function (response) {
+			if (response == 'error'){
+				 alert('There was an error loading the request.');
+			} else {
+				$('#code_view').html(response);
+			}
+         });
+	});
+}
