@@ -14,10 +14,10 @@
 		<ul id="cssactions">
 			<li><p id="MulCol">Multiple Columns</p></li>
 			<li><p id="BorRad">Border radius</p></li>
-			<li><p id="TexSha" onclick="HideNshow()">Text shadow</p></li>
-			<li><p id="BoxSha" onclick="HideNshow()">Box Shadow</p></li>
-			<li><p id="BoxRes" onclick="HideNshow()">Box resize</p></li>
-			<li><p id="BoxSiz" onclick="HideNshow()">Box sizing</p></li>
+			<li><p id="TexSha" >Text shadow</p></li>
+			<li><p id="BoxSha" >Box Shadow</p></li>
+			<li><p id="BoxRes" >Box resize</p></li>
+			<li><p id="BoxSiz" >Box sizing</p></li>
 			<li><p id="Transit">Transition</p></li>
 			<li><p id="Transfo">Transform</p></li>
 			<li><p id="FontFace">Font face</p></li>
