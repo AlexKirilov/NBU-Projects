@@ -452,17 +452,6 @@ function init(){
     
       function return_css_code_from_php(raw_data){
           console.log('da');
-//          if(raw_data[0] == "RGBA"){
-//          raw_data[1] = parseInt($('#color_R').val());
-//                    raw_data[2] = parseInt($('#color_G').val());
-//                     raw_data[3] = parseInt($('#color_B').val());
-//                     raw_data[4] = parseInt($('#opacity_color').val());
-//               for(i=1;i <= 4;i++){
-//                   if(raw_data[i] > 255){
-//                       raw_data[i] = 255;
-//                   }
-//               }      
-//          }
            var data4 = {
                   'ajax_data_s': raw_data
                 };
@@ -474,6 +463,32 @@ function init(){
     		$('#maincontent').load('editdetails.php');
     		return false;
     	});
+      
+      $('#saveCode').click(function(){
+    	  var valid = true;
+    	  if ($('#css_name').val()==""){
+    		  valid = false;
+    		  alert("Please enter name for css style, before saving it!");
+    	  }
+    	  var cssStyle = $('#code_view').html();
+    	  if (cssStyle==""){
+    		  valid = false;
+    		  alert("Please select first css styles, before trying to save them.");
+    	  }
+    	  if (valid){
+	    	  var request = {
+	    			  css: cssStyle,
+	    			  cssname : $('#css_name').val()
+	    	  }
+	    	  $.post("php/saveDBData.php",request,function(result){
+	    		  if (result == 'error'){
+	    			  alert('There was an error saving the request.');
+	    		  } else {
+	    			  $('#savedclasses').html(result);
+	    		  }
+	    	  });
+    	  }
+      });
         
 };
 

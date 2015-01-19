@@ -1,13 +1,13 @@
 <?php
 session_start();
-require("DBConnection.php");
+require("../php/DBConnection.php");
 // Includes the user class and creates instance of it.
-require_once ("php/classUser.php");
+require_once ("../php/classUser.php");
 $user = new User ($db); //Creates user object and constructor is responsible for checking if the user is already logged
 
 if ($user->is_loged) {
-
-    $guestDB = $_SESSION['Name'];
+	$cssCode = $_POST['css'];
+	$cssName = $_POST['cssname'];
     
     $selectData  = mysql_query("SELECT * FROM code WHERE GuestID = '".$user->user_id."'");
     if (!$selectData ) 
@@ -16,8 +16,8 @@ if ($user->is_loged) {
     }
     else 
     {       
-        $UserCode; //Тук поставя ме Данните при натискане на Save Button-a
-        $CodeName; //Imeto na code
+        $UserCode = $cssCode; //Тук поставя ме Данните при натискане на Save Button-a
+        $CodeName = $cssName; //Imeto na code
         $Max = 1;
         //SELECT COUNT(*) as Total FROM users GROUP BY Guest
         $guestDB = $user->user_id;
@@ -29,16 +29,13 @@ if ($user->is_loged) {
             }
         }
         
-        if ($Max <= 5) {
-            $sql = "INSERT INTO code ( ID , GuestID , CodeID ,CodeName, User_code )
-                    VALUES ( '0','$guestDB','$Max','$CodeName', '$UserCode' )";
-        }
-        else {
-            //Izvajda JS suobshtenie za maksimalen broi zapisi
-            echo 'Sorry you`ve reached the maximum options for saving data. /n ';
-        }
+		$sql = "INSERT INTO code ( GuestID , CodeID ,CodeName, User_code )
+                    VALUES ( '$guestDB','$Max','$CodeName', '$UserCode' )";
+		mysql_query($sql,$conn);
+		include("savedcssclasses.php");
+        
     }
 } else {
-	echo "You should be logged in, in order to use that functionality.";
+	echo "error";
 }
 mysql_close($conn);

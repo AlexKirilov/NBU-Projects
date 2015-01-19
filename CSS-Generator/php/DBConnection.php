@@ -1,5 +1,6 @@
 <?php
-	require_once 'php/classDB.php';
+	$currentPath = dirname(__FILE__);
+	require_once $currentPath.'/classDB.php';
 
     $DBHOST	= 'localhost';
 	$DBUSER = 'root';

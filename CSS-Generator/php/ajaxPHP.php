@@ -1,5 +1,8 @@
 <?php
+session_start ();
 
+// Checks if the database exists and if the db is not found - tries to create it.
+require_once ("../php/DBConnection.php"); // MySQL Connection';
 if (isset($_POST['ajax_data_s'])) {
 
     if (!empty($_POST['ajax_data_s'])) {
