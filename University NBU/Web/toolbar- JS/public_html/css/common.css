@@ -1,0 +1,45 @@
+/*$('#main_container').css({'display':'inline-block'});
+$('.new_buttons').css({'margin-left':'50px' , 'float':'left'});
+$('.new_txt p').css({'margin-left':'50px' , 'float':'left'});*/
+
+#main_container{
+    display: block;
+}
+
+.panels{
+    margin-left: 50px;
+    margin-top: 50px;
+    float: left;
+    display: block;
+}
+#toolbar{
+    display: inline-block;
+    padding: 10px 30px;
+    background: lightgray;
+    border-radius: 10px;
+    border:1px solid;
+    position: absolute;
+}
+#toolbar button{
+    margin-top: 0px;
+}
+#toolbar button:first-child{
+    margin-right: 30px;
+}
+.new_buttons{
+    margin-top: 13px;
+}
+.new_txt{
+    margin-top: 16px;
+}
+
+/*Link Button*/
+a.new_buttons {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    margin-top: 0;
+    padding: 2px 8px;
+    text-decoration: none;
+    color: initial;
+}

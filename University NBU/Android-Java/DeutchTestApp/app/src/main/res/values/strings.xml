@@ -1,0 +1,172 @@
+<resources>
+    <string name="app_name">DeutchTest App</string>
+    <string name="action_settings">Settings</string>
+    <string name="test_tittle_txt">Test</string>
+    <string name="ask_name_txt">What is your name:</string>
+    <string name="ask_for_age_txt">How old are you:</string>
+    <string name="radio_btn_woman">Woman</string>
+    <string name="radio_btn_men">Men</string>
+    <string name="user_gender_txt">What is your gender:</string>
+
+    //Questions
+    <string name="question_txt_1">1. Welcher Satz ist richtig?</string>
+    <string name="question_txt_2">2. Welcher Satz ist richtig?</string>
+    <string name="question_txt_3">3. Welcher Satz hat die gleiche Bedeutung
+Er fragt sie: „Kannst du mir sagen, wie spät es ist?“
+</string>
+    <string name="question_txt_4">4. Welcher Satz hat die gleiche Bedeutung wie
+" Mein Französisch muss besser werden!"
+</string>
+    <string name="question_txt_5">5. Welche Antwort ist korrekt?
+"Ich wusste nicht, dass deine Mutter heute Geburtstag hat."
+</string>
+    <string name="question_txt_6">6. Welcher Satz ist richtig?</string>
+    <string name="question_txt_7">7. Welcher Satz ist richtig?</string>
+    <string name="question_txt_8">8. Welche Antwort ist richtig?
+"Hast du so ein Auto schon mal gesehen?"
+</string>
+    <string name="question_txt_9">9. Welche Form passt?</string>
+    <string name="question_txt_10">10. Welches Wort ist richtig?</string>
+    <string name="question_txt_11">11. Welcher Satz hat die gleiche Bedeutung wie
+Der Mann, der dort drü ben wartet, sieht traurig aus.
+</string>
+    <string name="question_txt_12">12. Welches Satzende ist richtig?
+Petra hat sehr viel Arbeit und kommt jeden Abend ...
+</string>
+    <string name="question_txt_13">13. Welche Frage ist richtig?</string>
+    <string name="question_txt_14">14. Welches Satzende ist richtig?
+Hast du mein Handy gesehen? ...
+</string>
+    <string name="question_txt_15">15. Welches Wort ist korrekt?</string>
+    <string name="question_txt_16">16. Welche Endungen sind korrekt?</string>
+    <string name="question_txt_17">17. Wie lautet das Substantiv zu " fühlen"?</string>
+    <string name="question_txt_18">18. Welche Form ist korrekt?</string>
+    <string name="question_txt_19">19. Welcher Satz hat die gleiche Bedeutung wie
+"Ich mö chte, dass jemand den Drucker repariert."?
+</string>
+    <string name="question_txt_20">20. Welcher Satz ist korrekt?</string>
+
+
+    // Vuzmojni otgovori
+    //Question1
+    <string name="q1c1">Wenn er die Vokabeln hätte gelernt, hätte er den Test bestanden.</string>
+    <string name="q1c2">Wenn er die Vokabeln gelernt hätte, hätte er den Test bestanden.</string>
+    <string name="q1c3">Wenn er hätte gelernt die Vokabeln, hätte er bestanden den Test.</string>
+    <string name="q1c4">Wenn er hätte die Vokabeln gelernt, hätte er bestanden den Test.</string>
+
+    //Question2
+    <string name="q2c1">Nächste Woche werden wir die Arbeit beendet haben.</string>
+    <string name="q2c2">Nächste Woche wird die Arbeit beendet haben.</string>
+    <string name="q2c3">Nächste Woche werden wir die Arbeit geendet haben.</string>
+    <string name="q2c4">Nächste Woche werden wir die Arbeit beendet sein.</string>
+
+    //Question3
+    <string name="q3c1">Er fragt, ob sie ihm sagen könne, wie spät es ist.</string>
+    <string name="q3c2">Er fragt, ob sie ihm sagen könne, wie spät es gewesen wäre.</string>
+    <string name="q3c3">Er fragt, ob sie ihm sagen konnte, wie spät es sei.</string>
+    <string name="q3c4">Er fragt, ob sie ihm sagen könnte, wie spät es war.</string>
+
+    //Question4
+    <string name="q4c1">Sie sagt, sie werde mehr Französisch lernen.</string>
+    <string name="q4c2">Sie sagt, dass ihr Französisch verbessere.</string>
+    <string name="q4c3">Sie sagt, ihr Französisch müsse verbessern.</string>
+    <string name="q4c4">Sie sagt, ihr Französisch müsse besser werden.</string>
+
+    //Question5
+    <string name="q5c1">Das müsstest du eigentlich wissen.</string>
+    <string name="q5c2">Das hättest du eigentlich wissen müssen.</string>
+    <string name="q5c3">Das hattest du eigentlich gewusst.</string>
+    <string name="q5c4">Das musstest du eigentlich gewusst haben.</string>
+
+    //Question6
+    <string name="q6c1">In der Werkstatt repariert das Auto worden.</string>
+    <string name="q6c2">In der Werkstatt würde das Auto reparieren.</string>
+    <string name="q6c3">In der Werkstatt wird das Auto repariert.</string>
+    <string name="q6c4">In der Werkstatt wird das Auto reparieren.</string>
+
+    //Question7
+    <string name="q7c1">In der Schule viele Bücher gelesen werden müssen.</string>
+    <string name="q7c2">In der Schule muss viele Bücher gelesen werden.</string>
+    <string name="q7c3">In der Schule viele Bücher müssen gelesen werden.</string>
+    <string name="q7c4">In der Schule müssen viele Bücher gelesen werden.</string>
+
+    //Question8
+    <string name="q8c1">Ja, jegliche Autos gibt es jetzt überall.</string>
+    <string name="q8c2">Ja, manche Autos gibt es jetzt überall.</string>
+    <string name="q8c3">Ja, welche Autos gibt es jetzt überall.</string>
+    <string name="q8c4">Ja, solche Autos gibt es jetzt überall.</string>
+
+    //Question9
+    <string name="q9c1">Das Schönste, auf das ich mich erinnern kann, ist meine Hochzeitsreise.</string>
+    <string name="q9c2">Das Schönste, woran ich mich erinnern kann, ist meine Hochzeitsreise.</string>
+    <string name="q9c3">Das Schönste, weshalb ich mich erinnern kann, ist meine Hochzeitsreise.</string>
+    <string name="q9c4">Das Schönste, an was ich mich erinnern kann, ist meine Hochzeitsreise.</string>
+
+    //Question10
+    <string name="q10c1">Danke deiner Hilfe konnte ich die Arbeit schnell beenden.</string>
+    <string name="q10c2">Weil deiner Hilfe konnte ich die Arbeit schnell beenden.</string>
+    <string name="q10c3">Dank deiner Hilfe konnte ich die Arbeit schnell beenden.</string>
+    <string name="q10c4">Entlang deiner Hilfe konnte ich die Arbeit schnell beenden.</string>
+
+    <!--//Question11-->
+    <!--<string name="q11c1"></string>-->
+    <!--<string name="q11c2"></string>-->
+    <!--<string name="q11c3"></string>-->
+    <!--<string name="q11c4"></string>-->
+
+    <!--//Question12-->
+    <!--<string name="q12c1"></string>-->
+    <!--<string name="q12c2"></string>-->
+    <!--<string name="q12c3"></string>-->
+    <!--<string name="q12c4"></string>-->
+
+    <!--//Question13-->
+    <!--<string name="q13c1"></string>-->
+    <!--<string name="q13c2"></string>-->
+    <!--<string name="q13c3"></string>-->
+    <!--<string name="q13c4"></string>-->
+
+    <!--//Question14-->
+    <!--<string name="q14c1"></string>-->
+    <!--<string name="q14c2"></string>-->
+    <!--<string name="q14c3"></string>-->
+    <!--<string name="q14c4"></string>-->
+
+    <!--//Question15-->
+    <!--<string name="q15c1"></string>-->
+    <!--<string name="q15c2"></string>-->
+    <!--<string name="q15c3"></string>-->
+    <!--<string name="q15c4"></string>-->
+
+    <!--//Question16-->
+    <!--<string name="q16c1"></string>-->
+    <!--<string name="q16c2"></string>-->
+    <!--<string name="q16c3"></string>-->
+    <!--<string name="q16c4"></string>-->
+
+    <!--//Question17-->
+    <!--<string name="q17c1"></string>-->
+    <!--<string name="q17c2"></string>-->
+    <!--<string name="q17c3"></string>-->
+    <!--<string name="q17c4"></string>-->
+
+    <!--//Question18-->
+    <!--<string name="q18c1"></string>-->
+    <!--<string name="q18c2"></string>-->
+    <!--<string name="q18c3"></string>-->
+    <!--<string name="q18c4"></string>-->
+
+    <!--//Question19-->
+    <!--<string name="q19c1"></string>-->
+    <!--<string name="q19c2"></string>-->
+    <!--<string name="q19c3"></string>-->
+    <!--<string name="q19c4"></string>-->
+
+    <!--//Question20-->
+    <!--<string name="q20c1"></string>-->
+    <!--<string name="q20c2"></string>-->
+    <!--<string name="q20c3"></string>-->
+    <!--<string name="q20c4"></string>-->
+
+
+</resources>

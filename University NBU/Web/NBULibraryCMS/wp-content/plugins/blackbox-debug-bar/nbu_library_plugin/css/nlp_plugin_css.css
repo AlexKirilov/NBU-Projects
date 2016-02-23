@@ -1,0 +1,197 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 5, 2014, 4:53:16 PM
+    Author     : Bulkhan
+*/
+.nlp_check_blocks_style{
+    width:100%;
+    height:100px;
+}
+.nlp_check_blocks_style div{
+    width:10%;
+    height:30px;
+    float:left;
+}
+.nlp_check_blocks_style input{
+    display:none;
+}
+
+div ~ .nlp_unchecked_css{
+    border:1px solid lightblue !important;
+    background: lightgreen !important;
+}
+div ~ .nlp_checked_css{
+    border:1px solid lightgreen !important;
+    background: lightblue !important;
+}
+.nlp_color_explain{
+    width:100%;
+    height:30px;
+}
+.nlp_color_explain div{
+    width:30%;
+    margin:5px;
+    height:30px;
+    float:left;
+}
+.nlp_u_checked_this{
+     border:1px solid lightgreen !important;
+    background: lightblue !important;
+}
+.nlp_unused_time{
+       border:1px solid lightblue !important;
+    background: lightgreen !important;
+}
+.nlp_taken{
+    border:1px solid lightgrey;
+    background: lightcoral
+}
+.nlp_reserved_hour{
+    border:1px solid lightgrey;
+    background: lightcoral
+}
+
+.nlp_day_selected,.nlp_day_selected_dummy_day{
+      float: left;
+      cursor: pointer;
+      text-align: center;
+  width: 14%;
+  border:1px solid;
+  height: 40px;
+
+}
+.nlp_holder_frond_reservations{
+    float:left;
+    width:100%;
+    height:240px;
+}
+.nlp_possible_reservation_hour{
+    cursor: pointer;
+    width:12%;
+    float:left;
+    border:1px solid;
+}
+.nlp_checked_block{
+    display:none;
+}
+.nlp_checked_style{
+    color:seagreen;
+}
+.nlp_selected_month_calendar{
+    color:green;
+}
+.nlp_possible_month{
+    float:left;
+    width:10%;
+    text-align: center;
+    padding:5px;
+    border:1px solid;
+}
+.nlp_day_currently_selected{
+    color:yellowgreen;
+}
+.nlp_reserved_hours{
+    color:red;
+}
+.nlp_name_holder,.nlp_more_information_for_event{
+    float:left;
+    width:100%;
+}
+#nlp_reserver_chosen_hours{
+    float:left;
+    border: 1px solid;
+     margin-top: 2%;
+     text-align: center;
+     cursor: pointer;
+    width:30%;
+    height:30px;
+}
+.nlp_reservation_wrapper{
+    width:100%;
+    height:520px;
+}
+.nlp_email_data{
+    width:100%;
+    float:left;
+}
+.nlp_repeat_event,.nlp_repeat_options{
+    float:left;
+    width:100%;
+}
+.nlp_repeat_event_answer_wrapper,.nlp_repeat_montly_wrapper,.nlp_monly_repeat_wrapper_each,.nlp_monly_repeat_times{
+    width:100%;
+    float:left;
+}
+.nlp_each_week_day_chosen_wrapper,.nlp_repeat_inforamtion{
+    width:100%;
+}
+.nlp_number_of_months{
+    width:50px !important;
+}
+.nlp_months{
+    width:100%;
+    float:left;
+}
+.nlp_calendar_back{
+    width:20%;
+    float:left;
+}
+.nlp_calendar_next{
+     width:20%;
+    float:right;
+}
+.nlp_months .nlp_day_selected,.nlp_months .nlp_day_selected_dummy_day{
+      float: left;
+  cursor: pointer;
+  text-align: center;
+  width: 14%;
+  overflow: scroll;
+  border: 1px solid;
+  height: 100px !important;
+}
+#container {
+    max-width: 1600px !important;
+}
+.nlp_week_day_names_calendar{
+    width:100%;
+    float:left;
+}
+.nlp_week_name_day{
+    width:14%;
+    text-align: center;
+    height:50px;
+    float:left;
+}
+.nlp_view_wrapper div{
+    width:33%;
+    float:left;
+}
+
+/*
+calendar view new 
+*/
+.nlp_select_calendar_view{
+    width: 100%;
+    min-height: 60px;
+}
+.nlp_select_calendar_view .nlp_category_to_select{
+    float:left;
+    width: 30%;
+    border: 1px solid red;
+}
+.nlp_select_calendar_view .selected_cat_class{
+    border: 1px solid green;
+}
+.hidden_info{
+    display: none;
+}
+.curent_mnth_year{
+    width:100%;
+}
+.curent_mnth_year div{
+    float:left;
+}

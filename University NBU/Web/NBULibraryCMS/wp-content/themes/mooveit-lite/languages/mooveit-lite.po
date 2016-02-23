@@ -1,0 +1,657 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mooveit Lite\n"
+"POT-Creation-Date: 2015-01-21 20:17+0200\n"
+"PO-Revision-Date: 2015-01-21 20:17+0200\n"
+"Last-Translator: \n"
+"Language-Team: ThemeIsle <hello@themeisle.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.3\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:16
+msgid "404 Error"
+msgstr ""
+
+#: ../404.php:26
+msgid "The page does not exist"
+msgstr ""
+
+#: ../404.php:35
+msgid ""
+"Oops, I screwed up and you discovered my fatal flaw. Well, we're not all "
+"perfect, but we try.  Can you try this again or maybe visit our <a title="
+"\"themeIsle\" href=\""
+msgstr ""
+
+#: ../404.php:40
+msgid "404"
+msgstr ""
+
+#: ../archive.php:19 ../archive.php:21 ../includes/custom-functions.php:47
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: ../archive.php:23
+#, php-format
+msgid "%s."
+msgstr ""
+
+#: ../archive.php:74 ../archive.php:75 ../includes/subheader.php:96
+#: ../index.php:54 ../index.php:55 ../page-blog.php:64 ../page-blog.php:65
+#: ../search.php:56 ../search.php:57
+msgid "Read More"
+msgstr ""
+
+#: ../archive.php:81 ../attachment.php:25 ../home.php:136 ../index.php:61
+#: ../page-blog.php:71 ../page-contact.php:158 ../page.php:34 ../search.php:63
+#: ../single.php:61
+msgid "No posts found."
+msgstr ""
+
+#: ../comments.php:27 ../comments.php:39
+msgid "Comment navigation"
+msgstr ""
+
+#: ../comments.php:28 ../comments.php:40
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: ../comments.php:29 ../comments.php:41
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: ../comments.php:51
+msgid "Comments are closed."
+msgstr ""
+
+#: ../footer.php:24
+msgid "Copyright &copy;"
+msgstr ""
+
+#: ../footer.php:24
+msgid "Mooveit Lite"
+msgstr ""
+
+#: ../footer.php:24
+msgid "is proudly powered by"
+msgstr ""
+
+#: ../footer.php:24
+msgid "WordPress"
+msgstr ""
+
+#: ../footer.php:24
+msgid "."
+msgstr ""
+
+#: ../functions.php:34
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: ../functions.php:85
+msgid "This menu will appear in header."
+msgstr ""
+
+#: ../functions.php:142
+msgid "General Sidebar"
+msgstr ""
+
+#: ../functions.php:143
+msgid "This sidebar will appear in blog page."
+msgstr ""
+
+#: ../functions.php:161
+msgid "Footer Sidebar"
+msgstr ""
+
+#: ../functions.php:162
+msgid "This sidebar will appear in footer."
+msgstr ""
+
+#: ../home.php:24
+msgid "Why Choose Us?"
+msgstr ""
+
+#: ../home.php:36
+msgid "Title one"
+msgstr ""
+
+#: ../home.php:42 ../home.php:59 ../home.php:76
+msgid "Go to Appearance - Customize, to add content."
+msgstr ""
+
+#: ../home.php:53 ../home.php:70
+msgid "Title two"
+msgstr ""
+
+#: ../home.php:99
+msgid "About our services"
+msgstr ""
+
+#: ../home.php:108
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod "
+"tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+"quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo "
+"consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse "
+"cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat "
+"non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. "
+"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium "
+"doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore "
+"veritatis et quasi architecto beatae vitae dicta sunt."
+msgstr ""
+
+#: ../home.php:117
+msgid "Latest Posts"
+msgstr ""
+
+#: ../home.php:150
+msgid "Our Clients"
+msgstr ""
+
+#: ../home.php:160 ../home.php:180
+msgid "Logo 1"
+msgstr ""
+
+#: ../home.php:163 ../home.php:181
+msgid "Logo 2"
+msgstr ""
+
+#: ../home.php:166 ../home.php:182
+msgid "Logo 3"
+msgstr ""
+
+#: ../home.php:169 ../home.php:183
+msgid "Logo 4"
+msgstr ""
+
+#: ../home.php:172 ../home.php:184
+msgid "Logo 5"
+msgstr ""
+
+#: ../home.php:175 ../home.php:185
+msgid "Logo 6"
+msgstr ""
+
+#: ../includes/custom-functions.php:36
+msgid "Pingback:"
+msgstr ""
+
+#: ../includes/custom-functions.php:36
+msgid "(Edit)"
+msgstr ""
+
+#: ../includes/custom-functions.php:47
+msgid "Edit"
+msgstr ""
+
+#: ../includes/custom-functions.php:53
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../includes/custom-functions.php:57
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: ../includes/customizer.php:23
+msgid "Header"
+msgstr ""
+
+#: ../includes/customizer.php:30
+msgid "Contact Title:"
+msgstr ""
+
+#: ../includes/customizer.php:39
+msgid "Contact telephone:"
+msgstr ""
+
+#: ../includes/customizer.php:48
+msgid "YouTube link:"
+msgstr ""
+
+#: ../includes/customizer.php:57
+msgid "Facebook link:"
+msgstr ""
+
+#: ../includes/customizer.php:66
+msgid "Google+ link:"
+msgstr ""
+
+#: ../includes/customizer.php:75
+msgid "Twitter link:"
+msgstr ""
+
+#: ../includes/customizer.php:84
+msgid "Article Title:"
+msgstr ""
+
+#: ../includes/customizer.php:93
+msgid "Article Entry:"
+msgstr ""
+
+#: ../includes/customizer.php:104
+msgid "Article Link:"
+msgstr ""
+
+#: ../includes/customizer.php:114
+msgid "Front Page"
+msgstr ""
+
+#: ../includes/customizer.php:121
+msgid "Features Title:"
+msgstr ""
+
+#: ../includes/customizer.php:130
+msgid "Features Box (first) - Title:"
+msgstr ""
+
+#: ../includes/customizer.php:139
+msgid "Features Box (one) - Content:"
+msgstr ""
+
+#: ../includes/customizer.php:150
+msgid "Features Box (two) - Title:"
+msgstr ""
+
+#: ../includes/customizer.php:159
+msgid "Features Box (two) - Content:"
+msgstr ""
+
+#: ../includes/customizer.php:171
+msgid "Features Box (three) - Title:"
+msgstr ""
+
+#: ../includes/customizer.php:180
+msgid "Features Box (three) - Content:"
+msgstr ""
+
+#: ../includes/customizer.php:191
+msgid "Article - Title:"
+msgstr ""
+
+#: ../includes/customizer.php:200
+msgid "Article - Content:"
+msgstr ""
+
+#: ../includes/customizer.php:211
+msgid "Article - Image:"
+msgstr ""
+
+#: ../includes/customizer.php:222
+msgid "Our Clients - Title:"
+msgstr ""
+
+#: ../includes/customizer.php:231
+msgid "Our Clients - Logo 1:"
+msgstr ""
+
+#: ../includes/customizer.php:240
+msgid "Our Clients - Logo 2:"
+msgstr ""
+
+#: ../includes/customizer.php:249
+msgid "Our Clients - Logo 3:"
+msgstr ""
+
+#: ../includes/customizer.php:258
+msgid "Our Clients - Logo 4:"
+msgstr ""
+
+#: ../includes/customizer.php:267
+msgid "Our Clients - Logo 5:"
+msgstr ""
+
+#: ../includes/customizer.php:276
+msgid "Our Clients - Logo 6:"
+msgstr ""
+
+#: ../includes/customizer.php:286
+msgid "Contact"
+msgstr ""
+
+#: ../includes/customizer.php:293
+msgid "Map (iframe):"
+msgstr ""
+
+#: ../includes/customizer.php:304
+msgid "Title:"
+msgstr ""
+
+#: ../includes/customizer.php:311 ../page-contact.php:51
+msgid "228 Park Ave S,<br />New York,</br>NY 10003-1502,<br />U.S.A."
+msgstr ""
+
+#: ../includes/customizer.php:313
+msgid "Address:"
+msgstr ""
+
+#: ../includes/customizer.php:324
+msgid "Content:"
+msgstr ""
+
+#: ../includes/customizer.php:335
+msgid "Phone:"
+msgstr ""
+
+#: ../includes/customizer.php:344
+msgid "Email:"
+msgstr ""
+
+#: ../includes/customizer.php:354
+msgid "404 Page"
+msgstr ""
+
+#: ../includes/customizer.php:361
+msgid "404 - Title:"
+msgstr ""
+
+#: ../includes/customizer.php:370
+msgid "404 - Subtitle:"
+msgstr ""
+
+#: ../includes/customizer.php:379
+msgid "404 - Content"
+msgstr ""
+
+#: ../includes/customizer.php:413
+msgid "Documentation"
+msgstr ""
+
+#: ../includes/customizer.php:414
+msgid "View PRO Version"
+msgstr ""
+
+#: ../includes/customizer.php:415
+msgid "Testimonials Section"
+msgstr ""
+
+#: ../includes/customizer.php:415 ../includes/customizer.php:416
+msgid "(available in PRO version)"
+msgstr ""
+
+#: ../includes/customizer.php:416
+msgid "Pricing Table"
+msgstr ""
+
+#: ../includes/similar-articles.php:3
+msgid "Similar Articles"
+msgstr ""
+
+#: ../includes/similar-articles.php:41
+msgid "Not published any project."
+msgstr ""
+
+#: ../includes/subheader.php:60 ../page-contact.php:114
+msgid "YouTube"
+msgstr ""
+
+#: ../includes/subheader.php:64 ../page-contact.php:124
+msgid "Facebook"
+msgstr ""
+
+#: ../includes/subheader.php:68 ../page-contact.php:134
+msgid "Google+"
+msgstr ""
+
+#: ../includes/subheader.php:72 ../page-contact.php:144
+msgid "Twitter"
+msgstr ""
+
+#: ../includes/subheader.php:96
+msgid "Read more"
+msgstr ""
+
+#: ../includes/tgm-plugin-activation/class-tgm-plugin-activation.php:161
+#: ../includes/tgm-plugin-activation/tgm-plugin-activation.php:70
+msgid "Install Required Plugins"
+msgstr ""
+
+#: ../includes/tgm-plugin-activation/class-tgm-plugin-activation.php:162
+#: ../includes/tgm-plugin-activation/tgm-plugin-activation.php:71
+msgid "Install Plugins"
+msgstr ""
+
+#: ../includes/tgm-plugin-activation/class-tgm-plugin-activation.php:163
+#: ../includes/tgm-plugin-activation/tgm-plugin-activation.php:72
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: ../includes/tgm-plugin-activation/class-tgm-plugin-activation.php:164
+msgid "Something went wrong."
+msgstr ""
+
+#: ../includes/tgm-plugin-activation/class-tgm-plugin-activation.php:175
+#: ../includes/tgm-plugin-activation/tgm-plugin-activation.php:84
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: ../includes/tgm-plugin-activation/class-tgm-plugin-activation.php:176
+msgid "Return to the dashboard"
+msgstr ""
+
+#: ../includes/tgm-plugin-activation/class-tgm-plugin-activation.php:177
+#: ../includes/tgm-plugin-activation/class-tgm-plugin-activation.php:1951
+#: ../includes/tgm-plugin-activation/tgm-plugin-activation.php:85
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: ../includes/tgm-plugin-activation/class-tgm-plugin-activation.php:178
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: ../includes/tgm-plugin-activation/class-tgm-plugin-activation.php:179
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: ../includes/tgm-plugin-activation/class-tgm-plugin-activation.php:180
+msgid "Dismiss this notice"
+msgstr ""
+
+#: ../includes/tgm-plugin-activation/class-tgm-plugin-activation.php:538
+#: ../includes/tgm-plugin-activation/class-tgm-plugin-activation.php:2168
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: ../includes/tgm-plugin-activation/class-tgm-plugin-activation.php:1173
+msgid "Private Repository"
+msgstr ""
+
+#: ../includes/tgm-plugin-activation/class-tgm-plugin-activation.php:1176
+msgid "Pre-Packaged"
+msgstr ""
+
+#: ../includes/tgm-plugin-activation/class-tgm-plugin-activation.php:1181
+msgid "WordPress Repository"
+msgstr ""
+
+#: ../includes/tgm-plugin-activation/class-tgm-plugin-activation.php:1184
+msgid "Required"
+msgstr ""
+
+#: ../includes/tgm-plugin-activation/class-tgm-plugin-activation.php:1184
+msgid "Recommended"
+msgstr ""
+
+#: ../includes/tgm-plugin-activation/class-tgm-plugin-activation.php:1187
+msgid "Not Installed"
+msgstr ""
+
+#: ../includes/tgm-plugin-activation/class-tgm-plugin-activation.php:1189
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: ../includes/tgm-plugin-activation/class-tgm-plugin-activation.php:1294
+#: ../includes/tgm-plugin-activation/class-tgm-plugin-activation.php:1402
+msgid "Install"
+msgstr ""
+
+#: ../includes/tgm-plugin-activation/class-tgm-plugin-activation.php:1316
+#: ../includes/tgm-plugin-activation/class-tgm-plugin-activation.php:1403
+msgid "Activate"
+msgstr ""
+
+#: ../includes/tgm-plugin-activation/class-tgm-plugin-activation.php:1365
+#, php-format
+msgid ""
+"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+"Dashboard\">Return to the Dashboard</a>"
+msgstr ""
+
+#: ../includes/tgm-plugin-activation/class-tgm-plugin-activation.php:1381
+msgid "Plugin"
+msgstr ""
+
+#: ../includes/tgm-plugin-activation/class-tgm-plugin-activation.php:1382
+msgid "Source"
+msgstr ""
+
+#: ../includes/tgm-plugin-activation/class-tgm-plugin-activation.php:1383
+msgid "Type"
+msgstr ""
+
+#: ../includes/tgm-plugin-activation/class-tgm-plugin-activation.php:1384
+msgid "Status"
+msgstr ""
+
+#: ../includes/tgm-plugin-activation/class-tgm-plugin-activation.php:1934
+msgid "Install package not available."
+msgstr ""
+
+#: ../includes/tgm-plugin-activation/class-tgm-plugin-activation.php:1935
+#, php-format
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr ""
+
+#: ../includes/tgm-plugin-activation/class-tgm-plugin-activation.php:1936
+msgid "Unpacking the package&#8230;"
+msgstr ""
+
+#: ../includes/tgm-plugin-activation/class-tgm-plugin-activation.php:1937
+msgid "Installing the plugin&#8230;"
+msgstr ""
+
+#: ../includes/tgm-plugin-activation/class-tgm-plugin-activation.php:1938
+msgid "Plugin install failed."
+msgstr ""
+
+#: ../includes/tgm-plugin-activation/class-tgm-plugin-activation.php:1939
+msgid "Plugin installed successfully."
+msgstr ""
+
+#: ../includes/tgm-plugin-activation/class-tgm-plugin-activation.php:1950
+msgid "Plugin activation failed."
+msgstr ""
+
+#: ../includes/tgm-plugin-activation/class-tgm-plugin-activation.php:2064
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: ../includes/tgm-plugin-activation/class-tgm-plugin-activation.php:2065
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: ../includes/tgm-plugin-activation/class-tgm-plugin-activation.php:2065
+#: ../includes/tgm-plugin-activation/class-tgm-plugin-activation.php:2074
+msgid "Show Details"
+msgstr ""
+
+#: ../includes/tgm-plugin-activation/class-tgm-plugin-activation.php:2065
+#: ../includes/tgm-plugin-activation/class-tgm-plugin-activation.php:2074
+msgid "Hide Details"
+msgstr ""
+
+#: ../includes/tgm-plugin-activation/class-tgm-plugin-activation.php:2066
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: ../includes/tgm-plugin-activation/class-tgm-plugin-activation.php:2067
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../includes/tgm-plugin-activation/class-tgm-plugin-activation.php:2071
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: ../includes/tgm-plugin-activation/class-tgm-plugin-activation.php:2072
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: ../includes/tgm-plugin-activation/class-tgm-plugin-activation.php:2073
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: ../includes/tgm-plugin-activation/class-tgm-plugin-activation.php:2074
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: ../includes/tgm-plugin-activation/class-tgm-plugin-activation.php:2075
+msgid "All installations have been completed."
+msgstr ""
+
+#: ../includes/tgm-plugin-activation/class-tgm-plugin-activation.php:2076
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../includes/tgm-plugin-activation/tgm-plugin-activation.php:73
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: ../includes/tgm-plugin-activation/tgm-plugin-activation.php:86
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: ../index.php:12 ../page-blog.php:14
+msgid "Our New Blog"
+msgstr ""
+
+#: ../page-contact.php:68
+msgid "Phone: "
+msgstr ""
+
+#: ../page-contact.php:76
+msgid "+1 888-587-8421"
+msgstr ""
+
+#: ../page-contact.php:77
+msgid "+1-888-587-8421"
+msgstr ""
+
+#: ../page-contact.php:91
+msgid "E-mail: "
+msgstr ""
+
+#: ../page-contact.php:99 ../page-contact.php:100
+msgid "hello@themeisle.com"
+msgstr ""
+
+#: ../sidebar.php:13
+msgid "The sidebar is not active."
+msgstr ""
+
+#: ../single.php:50
+msgid "Pages:"
+msgstr ""

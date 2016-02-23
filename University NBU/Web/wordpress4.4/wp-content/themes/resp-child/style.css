@@ -1,0 +1,115 @@
+/*
+ Theme Name:   resp-child
+ Theme URI:    http://pinpoint.bg
+ Description:  Child Theme
+ Author:       SK
+ Author URI:   pinpoint.bg
+ Template:     Responsive
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  resp-child
+*/
+
+body {
+    overflow: hidden;
+}
+
+.row {
+    margin-top: 50px;
+}
+
+.row div {
+    height: 50px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    border-left-color: gray;
+    border-bottom-color: gray;
+    margin-left: 2%;
+    line-height: 0px;
+    color: transparent;
+}
+
+.row div:hover {
+    transform: scale(0.5 , 2);
+    transform: rotate(20deg);
+    border-color: red;
+    transition: 0.5s;
+    line-height: 50px;
+    transition: 0.5s;
+    color: black;
+}
+
+#logo {
+    display: none !important;
+}
+
+#menu-custom_navigation, .skip-container,#wpadminbar, #featured , #widgets {
+    display: none !important;
+}
+
+.out{
+    transform: scale(0,2);
+    transition: 2s !important;
+}
+
+#container {
+    position: relative;
+    overflow: hidden;
+    min-height: 500px;
+}
+
+#container div {
+    display: inline-block;
+    top: 50px;
+}
+
+.inside1 {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+    background: white;
+}
+.inside2 {
+    position: absolute;
+    left: 970px;
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+    background: #E3E7E8;
+}
+.inside3 {
+    position: absolute;
+    left: 970px;
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+    background: #D5DADB;
+}
+.inside4 {
+    position: absolute;
+    left: 970px;
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+    background: #CBD0D1;
+}
+.inside5 {
+    position: absolute;
+    left: 970px;
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+    background: #C8CBCC;
+}
+.inside6 {
+    position: absolute;
+    left: 970px;
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+    background: #C0C3C4;
+}

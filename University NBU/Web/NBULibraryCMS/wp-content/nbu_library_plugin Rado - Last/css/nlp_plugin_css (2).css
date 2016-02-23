@@ -1,0 +1,425 @@
+
+/* 
+    Created on : Aug 5, 2014, 4:53:16 PM
+    Author     : Bulkhan
+
+    Change it  : July 19, 2015, 09:17:22 AM
+    Author     : Alex
+*/
+.nlp_check_blocks_style{
+    width:100%;
+    height:100px;
+}
+.nlp_check_blocks_style div{
+    width:10%;
+    height:30px;
+    float:left;
+}
+.nlp_check_blocks_style input{
+    display:none;
+}
+
+div ~ .nlp_unchecked_css{
+    border:1px solid lightblue !important;
+    background: lightgreen !important;
+}
+div ~ .nlp_checked_css{
+    border:1px solid lightgreen !important;
+    background: lightblue !important;
+}
+.nlp_color_explain{
+    width:100%;
+    height:30px;
+}
+.nlp_color_explain div{
+    width:30%;
+    margin:5px;
+    height:30px;
+    float:left;
+}
+.nlp_u_checked_this{
+    border:1px solid lightgreen !important;
+    background: lightblue !important;
+}
+.nlp_unused_time{
+    border:1px solid lightblue !important;
+    background: lightgreen !important;
+}
+.nlp_taken{
+    border:1px solid lightgrey;
+    background: lightcoral
+}
+.nlp_reserved_hour{
+    border:1px solid lightgrey;
+    background: lightcoral
+}
+
+.nlp_day_selected,.nlp_day_selected_dummy_day{
+    float: left;
+    cursor: pointer;
+    text-align: center;
+    width: 14%;
+    border:1px solid;
+    height: 40px;
+
+}
+.nlp_holder_frond_reservations{
+    float:left;
+    width:100%;
+    height:240px;
+}
+.nlp_possible_reservation_hour{
+    cursor: pointer;
+    width:12%;
+    float:left;
+    border:1px solid;
+}
+.nlp_checked_block{
+    display:none;
+}
+.nlp_checked_style{
+    color:seagreen;
+}
+.nlp_selected_month_calendar{
+    color:green;
+}
+.nlp_possible_month{
+    float:left;
+    width:10%;
+    text-align: center;
+    padding:5px;
+    border:1px solid;
+}
+.nlp_day_currently_selected{
+    color:yellowgreen;
+}
+.nlp_reserved_hours{
+    color:red;
+}
+.nlp_name_holder,.nlp_more_information_for_event{
+    float:left;
+    width:100%;
+}
+/*
+#nlp_reserver_chosen_hours{
+    float:left;
+    border: 1px solid;
+    margin-top: 2%;
+    text-align: center;
+    cursor: pointer;
+    width:30%;
+    height:30px;
+}*/
+.nlp_reservation_wrapper{
+    width:100%;
+    height:520px;
+}
+.nlp_email_data{
+    width:100%;
+    float:left;
+}
+.nlp_repeat_event,.nlp_repeat_options{
+    float:left;
+    width:100%;
+}
+.nlp_repeat_event_answer_wrapper,.nlp_repeat_montly_wrapper,.nlp_monly_repeat_wrapper_each,.nlp_monly_repeat_times{
+    width:100%;
+    float:left;
+}
+.nlp_each_week_day_chosen_wrapper,.nlp_repeat_inforamtion{
+    width:100%;
+}
+.nlp_number_of_months{
+    width:50px !important;
+}
+.nlp_months{
+    width:100%;
+    float:left;
+}
+.nlp_calendar_back{
+    width:20%;
+    float:left;
+}
+.nlp_calendar_next{
+    width:20%;
+    float:right;
+}
+.nlp_months .nlp_day_selected,.nlp_months .nlp_day_selected_dummy_day{
+    float: left;
+    cursor: pointer;
+    text-align: center;
+    width: 14%;
+    overflow: scroll;
+    border: 1px solid;
+    height: 100px !important;
+}
+#post-9 #nlp_selected_day .nlp_saturday, #post-9 #nlp_selected_day  .nlp_sunday{
+    background: #F0F0F0;
+}
+#container {
+    max-width: 1600px !important;
+}
+.nlp_week_day_names_calendar{
+    width:100%;
+    float:left;
+}
+.nlp_week_name_day{
+    width:14%;
+    text-align: center;
+    height:30px;
+    float:left;
+}
+.nlp_view_wrapper div{
+    width:33%;
+    float:left;
+}
+/*
+calendar view new 
+*/
+.nlp_select_calendar_view{
+    width: 100%;
+    min-height: 60px;
+}
+.nlp_select_calendar_view .nlp_category_to_select{
+    float:left;
+    width: 30%;
+    border: 1px solid red;
+}
+.nlp_select_calendar_view .selected_cat_class{
+    border: 1px solid green;
+}
+.hidden_info{
+    display: none;
+}
+.curent_mnth_year{
+    width:100%;
+}
+.curent_mnth_year div{
+    float:left;
+}
+
+
+/*Alex
+      ||
+    \ || /
+     \||/
+      \/
+
+
+/*Calendar*/
+/*******************************************************************************
+        Reservation page
+*******************************************************************************/
+
+.post-entry {
+    width: 90%;
+    /*    padding: 0;
+        margin: 0 auto;*/
+}
+#nlp_select_hall{
+    display: block;
+    margin-top:30px;
+}
+.nlp_reservation_date{
+    width: 350px;
+    height: 100%;
+    padding-top:20px !Important;
+    float: left;
+    /*padding-bottom: 20px !Important;*/
+}
+.nlp_reservation_date .nlp_name_holder, .nlp_email_data, .nlp_repeat_options, .nlp_more_information_for_event{
+    padding-top:20px !Important;
+}
+
+.nlp_reservation_date #nlp_year{
+    margin-top: -14px !Important;
+}
+
+.nlp_reservation_wrapper #nlp_month div{
+    margin-right: 5px !Important;
+    width: 40px;
+    padding: 0px;
+}
+.nlp_reservation_wrapper{
+    height: 100% !Important;
+}
+
+.nlp_reservation_wrapper div{
+    margin: 0px !Important;
+    display: inline-block !Important;
+}
+
+.nlp_reservation_date .nlp_possible_month, .nlp_reservation_wrapper div{
+    border: none;
+}
+.nlp_reservation_date #nlp_selected_day{
+    width: 220px;
+}
+.nlp_reservation_date #nlp_selected_day div{
+    height: 30px !Important;
+    width: 30px !Important;
+}
+.nlp_reservation_date #nlp_selected_day div:nth-child(odd){
+    /*background-color: lightgray;*/ 
+}
+.nlp_holder_frond_reservations div{
+    width: 70px;
+    padding: 5px;
+}
+
+.nlp_reservation_date .nlp_holder_frond_reservations{
+    height: 100%;
+}
+
+#post-9 .entry-title, #post-7 .entry-title{
+    font-size: 1.8em;
+}
+
+.nlp_reservation_date .nlp_free_hours{
+    color: green;
+}
+
+.nlp_reservation_date .nlp_checked_style{
+    color: lightsteelblue;
+}
+/*Button Резервиране на зала*/
+#button_reservation{
+    height: 100px;
+    width: 100%;
+    float: left;
+}
+#nlp_reserver_chosen_hours{
+    letter-spacing: 0.4px;
+    font-family: Arial Black;
+    /*  font-family: Calibri;
+      font-weight: bold;*/
+    font-style: italic;
+    float: right;
+    cursor: pointer;
+    width: 100px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid linen;
+    text-align: center;
+    margin: 40px 8px 0 0;
+    background: -webkit-linear-gradient(bottom, white, silver);
+    background: -o-linear-gradient(top, white, silver);
+    background: -moz-linear-gradient(top, white, silver);
+    background: linear-gradient(top, white, silver);
+    box-shadow: 10px 10px 20px -6px;
+}
+
+#nlp_reserver_chosen_hours:hover{
+    margin: 45px 5px 0 0;
+    box-shadow: 4px 6px 9px -6px;
+}
+
+/*Calendar week_day_names*/
+#nlp_week_names{
+    padding-top: 10px;
+    float: left;
+    width: 100%;
+    height: 25px;
+}
+
+#nlp_week_names div{
+    padding: 0 10px 0 10px;
+    font-weight: bolder;
+}
+/* Reservation info */
+#reservation_info {
+    color: grey;
+}
+
+/*  Size of the input and textarea fields  */
+.nlp_reservation_date .nlp_name_holder, .nlp_more_information_for_event, .nlp_email_data input, textarea{
+    width: 350px;
+    display: block;
+}
+
+#nlp_repeat_options {
+    margin-left: 67px;
+}
+#nlp_each_month{
+    margin-left: 92px;
+}
+.nlp_monly_repeat_times label{
+    margin-top: 10px !Important;
+}
+.nlp_monly_repeat_times input{
+    margin-left: 15px !Important;
+}
+
+.nlp_repeat_weeakly_wrapper label{
+    margin-top: 15px !Important;
+}
+.nlp_each_week_day_chosen_wrapper input{
+    margin-left: 10px;
+}
+.nlp_repeat_weeakly_wrapper select{
+    margin-left: 108px !Important;
+}
+
+
+/*******************************************************************************
+
+    Second PAGE
+    
+*******************************************************************************/
+#post-7 .post-entry {
+    width: 100% !Important;
+}
+#nlp_selected_day >div>div{
+    overflow: hidden;
+}
+
+.nlp_view_wrapper div, .nlp_calendar_navigation div{
+    border: 1px solid linen;
+    cursor: pointer;  
+}
+.nlp_view_wrapper div:hover, .nlp_calendar_navigation div:hover{
+    font-weight: bolder; 
+}
+.nlp_months .nlp_day_selected_dummy_day, .nlp_week_name_day{
+    border: none;
+    width: 14.2%;
+}
+.post-entry .nlp_view_wrapper{
+    height: 21px;
+    text-align: center;
+    border: 1px solid linen; 
+    background: -webkit-linear-gradient(bottom, white, lightgray);
+    background: -o-linear-gradient(top, white, lightgray);
+    background: -moz-linear-gradient(top, white, lightgray);
+    background: linear-gradient(top, white, lightgray);
+}
+.post-entry .nlp_calendar_navigation{
+    height: 21px;
+    border: 1px solid linen;
+    text-align: center;
+    background: -webkit-linear-gradient(top, white, lightgray);
+    background: -o-linear-gradient(bottom, white, lightgray);
+    background: -moz-linear-gradient(bottom, white, lightgray);
+    background: linear-gradient(bottom, white, lightgray);
+}
+
+.nlp_week_day_names_calendar{
+    margin-top:30px;
+}
+/*#post-7 .nlp_saturday, #post-7 .nlp_sunday{
+    text-align: right !Important;
+    background: gray ;   
+}*/
+#post-7 .nlp_day_selected {
+    text-align: right !Important;
+    background: #F0F0F0 ;   
+}
+/* #nlp_selected_day .nlp_day_selected:nth-child(odd){
+    background: #F0F0F0 ;
+}*/
+#post-7  .nlp_day_selected >div {
+    border-top:1px solid;
+    background: white !Important;
+    height: 100%;
+}

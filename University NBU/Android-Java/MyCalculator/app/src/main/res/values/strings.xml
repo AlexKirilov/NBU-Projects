@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyCalculator</string>
+    <string name="action_settings">Settings</string>
+    <string name="defoult_value">0</string>
+</resources>
